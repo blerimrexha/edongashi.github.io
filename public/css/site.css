@@ -1,0 +1,13 @@
+@media print {    
+  .no-print, .no-print * {
+    display: none !important;
+  }
+
+  .container {
+    max-width: none !important;
+  }
+}
+
+.push-bottom {
+  margin-bottom: 40px;
+}

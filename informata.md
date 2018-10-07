@@ -8,6 +8,18 @@ noslides: true
 
 ---
 
+## Kontakti
+
+### Përmes email
+
+edon.gashi@uni-pr.edu
+
+### Përmes GitHub
+
+[Kliko këtu](https://github.com/edongashi/edongashi.github.io/issues/new/choose)
+
+---
+
 ## Linqe
 
 <dl>
@@ -26,27 +38,3 @@ noslides: true
   <dt><a href="https://github.com/edongashi/edongashi.github.io">edongashi.github.io</a></dt>
   <dd>Projekti i kësaj uebfaqeje në GitHub</dd>
 </dl>
-
----
-
-## Na kontaktoni
-
-### Pyetje
-
-Për çfarëdo pyetje që keni, mund të na shkruani [këtu](https://github.com/edongashi/edongashi.github.io/issues/new?template=pyetje.md).
-
-### Kërkesë për material
-
-Nëse keni nevojë për material shtesë në ndonjë lëndë, bëni kërkesë [këtu](https://github.com/edongashi/edongashi.github.io/issues/new?template=kerkese-per-material.md).
-
-### Kërkesa tjera
-
-Nëse keni ndonjë kërkese tjetër, shkruani [këtu](https://github.com/edongashi/edongashi.github.io/issues/new?template=kerkese.md).
-
-### Diskutime
-
-Për diskutime, shkruani [këtu](https://github.com/edongashi/edongashi.github.io/issues/new?template=diskutim.md).
-
-### Çështje tjera
-
-Për të gjitha çështjet tjera, shkruani [këtu](https://github.com/edongashi/edongashi.github.io/issues/new).

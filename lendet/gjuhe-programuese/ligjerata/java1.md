@@ -95,9 +95,9 @@ Në C++ blloku i urdhërave mbështjellet në kllapa gjarpërore.
 
 ```cpp
 {
-  urdhër;
-  urdhër;
-  urdhër;
+  urdher;
+  urdher;
+  urdher;
   return 0;
 }
 ```
@@ -130,7 +130,7 @@ Në të ardhmën do të krijojmë edhe blloqe tjera - funksione. Për fillim do 
 ---
 
 $$
-\texttt{int main}\overbrace{\color{red}{\texttt{()}}}^{\text{parametrat}}\texttt{{ ... }}
+\texttt{int main}\overbrace{\color{red}{\texttt{\(\)}}}^{\text{parametrat}}\texttt{{ ... }}
 $$
 
 Në kllapa futen parametrat, por për main nuk na nevojiten. Prandaj lihen të zbrazëta.

@@ -145,7 +145,7 @@ int main() {
 }
 ```
 
-Urdhëri $\;\color{red}{\texttt{return 0;}}\;$ ka kuptimin "kthe zero" - programi i ekzekutuar nuk ka gabim.
+Urdhëri `return 0;` ka kuptimin "kthe zero" - programi i ekzekutuar nuk ka gabim.
 
 Me kohën do të mësojmë urdhëra tjerë.
 
@@ -175,7 +175,7 @@ int main() {
 }
 ```
 
-Kur vendoset sekuenca "//", gjithçka pas saj në atë rresht injorohet.
+Kur vendoset sekuenca `//`, gjithçka pas saj në atë rresht injorohet.
 
 ---
 
@@ -388,7 +388,7 @@ Mire se vini.
 
 ---
 
-Ekzistojnë disa karaketere tjera speciale. Karakteret që fillojnë me "\" kanë kuptim të veçantë.
+Ekzistojnë disa karaketere tjera speciale. Karakteret që fillojnë me `\` kanë kuptim të veçantë.
 
 Karakteri|Kuptimi
 -|-

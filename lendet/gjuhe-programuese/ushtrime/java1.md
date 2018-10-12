@@ -1,5 +1,5 @@
----
-title: 'Ushtrime - Java 1'
+# Ushtrime - Java 1
+
 ---
 
 ## Instalimi i Visual Studio
@@ -7,7 +7,7 @@ title: 'Ushtrime - Java 1'
 1. Vizitojmë faqen [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
 2. Te `Visual Studio IDE`, e zgjedhim `Community 2017`.
 3. Klikojmë butonin dhe presim deri të shkarkohet.
-4. Ndjekim hapat e instalimit, dhe sigurohemi që kemi zgjedhur opsionin `Desktop Development with C++` gjatë instalimit.
+4. Ndjekim hapat e instalimit, dhe sigurohemi që kemi zgjedhur opsionin `Desktop development with C++` gjatë instalimit.
 
 ---
 
@@ -21,24 +21,24 @@ title: 'Ushtrime - Java 1'
 4. Te lloji i projektit, e kërkojmë njërën nga këto:
    - Për Visual Studio 2017, e zgjedhim `Windows Desktop Wizard`.
    - Për versione më të vjetra, e zgjedhim `Win32 Project`.
-5. Te shtegu i projektit, e zgjedhim dosjen ku dëshirojmë ta ruajmë projektin. Këtë e bëjmë duke shtypur butonin `Browse`.
-6. E vendosim emrin e projektit, psh. `Ushtrimi1`.
+5. E vendosim emrin e projektit, psh. `Ushtrimi1`.
+6. Te lokacioni i projektit, e zgjedhim dosjen ku dëshirojmë ta ruajmë projektin. Këtë e bëjmë duke shtypur butonin `Browse...`.
 7. E shtypim `OK`.
 8. Na shfaqet dritarja për të konfiguruar projektin.
     - E zgjedhim opsionin `Empty Project`
-    - Tek `Application Type` e zgjedhim `Console Application`
+    - Tek `Application type` e zgjedhim `Console Application`
 9. Shtypim `OK`.
 
 ---
 
-## Krijimi i fajllit burimor
-
 <!-- .slide: style="font-size:0.6em;" -->
+
+## Krijimi i fajllit burimor
 
 1. Pasi ta kemi hapur projektin, në anën e djathtë e shohim `Solution Explorer`.
     - Nëse nuk e shohim, shkojmë te `View > Solution Explorer` për ta shfaqur.
-2. Te projekti ynë, i shohim katër dosje. Dosjen `Source Files` e hapim me tastin e djathtë, dhe shkojmë te `Add > New Item`
-3. Na hapet menyja për krijimin e fajllave. E zgjedhim `C++ File (.cpp)`, dhe ia lëmë emrin sipas dëshirës, psh `programi.cpp`. E shtypim `OK`.
+2. Te projekti ynë, i shohim katër dosje. Dosjen `Source Files` e hapim me tastin e djathtë, dhe shkojmë te `Add > New Item...`.
+3. Na hapet menyja për krijimin e fajllave. E zgjedhim `C++ File (.cpp)`, dhe ia lëmë emrin sipas dëshirës, psh `programi.cpp`. E shtypim `Add`.
 4. Te dosja `Source Files` na shfaqet fajlli i sapo-krijuar. E klikojmë dy herë dhe na shfaqet editori.
 
 ---
@@ -93,3 +93,10 @@ Press any key to continue...
 2. E kërkojmë shtegun e projektit tonë.
 3. Brenda dosjes së projektit, e zgjedhim `.sln` fajllin i cili mban emrin e projektit.
 4. Shtypim `Open` dhe na hapet projekti. 
+
+---
+
+## Resurse online
+
+- [cplusplus.com](http://www.cplusplus.com/doc/tutorial/) - Materiale mësimore për gjuhën C++.
+- [cpp.sh](http://cpp.sh/) - Testo programe të C++ në ueb.

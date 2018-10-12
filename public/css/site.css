@@ -11,3 +11,7 @@
 .push-bottom {
   margin-bottom: 40px;
 }
+
+ol > li > ul {
+  margin-bottom: 0;
+}

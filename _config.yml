@@ -3,5 +3,4 @@ tagline:          'Shënimet e ushtrimeve'
 description:      'Shënimet e ushtrimeve për Inxhinieri Kompjuterike'
 url:              https://edongashi.github.io
 google_analytics: UA-126221132-1
-optional_front_matter:
-  remove_originals: false
+include: [".htaccess", "lendet/"]

@@ -1,3 +1,7 @@
+---
+title: 'Ushtrime - Java 1'
+---
+
 ## Instalimi i Visual Studio
 
 1. Vizitojmë faqen [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).

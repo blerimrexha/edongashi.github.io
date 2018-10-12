@@ -1,3 +1,7 @@
+---
+title: 'Ligjerata - Java 1'
+---
+
 ## Gjuhë Programuese
 
 Edon Gashi

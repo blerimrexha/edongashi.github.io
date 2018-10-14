@@ -231,7 +231,7 @@ Dalja standarde është objekti `std::cout`
 
 Nga `std::cin` lexohet me operatorin `>>`
 
-```
+```cpp
 std::cin >> x;
 ```
 
@@ -247,7 +247,7 @@ Merr nga standard input dhe vendose në $x$.
 
 Në `std::cout` shkruhet me operatorin `<<`
 
-```
+```cpp
 std::cout << "Pershendetje";
 ```
 
@@ -274,7 +274,7 @@ int main() {
 
 Pas ekzekutimit, në dritare shfaqet
 
-```cpp
+```text
 Pershendetje
 ```
 
@@ -334,7 +334,7 @@ int main() {
 
 Në ekran shfaqet:
 
-```cpp
+```text
 Pershendetje!
 Mire se vini.
 ```
@@ -354,7 +354,7 @@ int main() {
 
 Në ekran shfaqet:
 
-```cpp
+```text
 Pershendetje!
 Mire se vini.
 ```
@@ -381,7 +381,7 @@ cout << "Pershendetje!\nMire se vini.";
 
 Në ekran shfaqet:
 
-```cpp
+```text
 Pershendetje!
 Mire se vini.
 ```
@@ -418,7 +418,7 @@ int main() {
 
 Rezultati në ekran
 
-```cpp
+```text
 Rreshti i pare
 Rreshti i dyte
 ```

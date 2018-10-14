@@ -59,7 +59,7 @@
           }
 
           if (!/[^A-Za-z0-9 _./-]/.test(src)) {
-            document.write('<section data-markdown=" ' + src + '.md"></section>')
+            document.write('<section data-markdown=" ' + src + '.md" data-separator="^---$" data-separator-vertical="^--$"></section>')
           }
         }
       </script>
@@ -118,8 +118,8 @@
     var options = {
       dependencies: deps,
       notesSeparator: "note:",
-      separator: "^[\r\n?|\n]---[\r\n?|\n]$",
-      verticalSeparator: "^[\r\n?|\n]--[\r\n?|\n]$",
+      separator: "^---$",
+      verticalSeparator: "^--$",
       theme: "white",
       highlightTheme: "vs2015",
       controls: true,

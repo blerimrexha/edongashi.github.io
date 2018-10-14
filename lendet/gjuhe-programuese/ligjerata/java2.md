@@ -673,13 +673,50 @@ Totali: 17
 
 ---
 
-**Detyrë:** Të bëhet shkëmbimi i valutës nga euro (€) në dollar ($), nëse rata e këmbimit jepet nga tastiera.
+## Shtypja e formatuar
+
+Në librarinë `<iomanip>` (input output manipulators) ekzistojnë disa manipulatorë për formatimin e daljes në `cout`.
+
+---
+
+<!-- .slide: style="font-size: 0.7em" -->
+
+Manipulatori|Alternativa|Kuptimi
+-|-|-
+setw(n)|cout.width(n)|Shkruaj rezultatin në `n` karaktere, duke shtuar karaktere mbushëse (mostra) nëse ka nevojë.
+setfill(c)|cout.fill(c)|Hapësirat e shtuara mbushi me karakterin `c` - mostrën.
+setprecision(n)|cout.precision(n)|Kufizo numrat me presje në `n` shifra.
+
+---
+
+**Mënyrat e precizitetit**
+
+Supozojmë që streami (cout) ka precizitetin `n`. Kemi tri lloje të shfaqjes së numrave me presje.
+
+1. `default` - kufizohet dalja në `n` shifra total (para dhe pas presjes).
+2. `std::fixed` - kufizohet dalja në `n` shifra pas presjes. 
+3. `std::scientific` - kufizohet dalja në `n` shifra pas presjes, ndërsa pjesa e plotë gjithmonë është 1 shifrore. Eksponenti përdoret për ta lëvizur presjen.
+
+---
+
+**Detyrë:** Të bëhet shkëmbimi i valutës nga euro (€) në dollar ($), nëse rata e këmbimit jepet nga tastiera. Rezultati të shfaqet në 2 shifra pas presjes.
 
 ```text
 Jepni vleren ne euro: 250
 Jepni raten e shkembimit: 1.16
-Vlera ne dollar: 290
+Vlera ne dollar: 290.00
 ```
+
+---
+
+**Detyrë:** Të shfaqen rezultatet e provimit në formë tabele si në vijim. Të përdoret manipulatori `setw` dhe `setfill`.
+
+```text
+ Lenda..................Nota
+ Matematike...............10
+ Fizike....................7
+ Gjuhe Programuese.........8
+``` 
 
 ---
 

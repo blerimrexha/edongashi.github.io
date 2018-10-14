@@ -609,24 +609,6 @@ Shkurtesa|Kuptimi
 ```cpp
 int a = 5;
 cout << "Para inkrementimit: " << a << endl;
-a++;
-cout << "Pas inkrementimit: " << a << endl;
-```
-
-Shfaqet:
-
-```text
-Para inkrementimit: 5
-Pas inkrementimit: 6
-```
-
----
-
-**Shembulli 2: `a++`**
-
-```cpp
-int a = 5;
-cout << "Para inkrementimit: " << a << endl;
 cout << "Gjate inkrementimit: " << a++ << endl;
 cout << "Pas inkrementimit: " << a << endl;
 ```
@@ -641,7 +623,7 @@ Pas inkrementimit: 6
 
 ---
 
-**Shembulli 3: `++a`**
+**Shembulli 2: `++a`**
 
 ```cpp
 int a = 5;
@@ -686,6 +668,7 @@ Manipulatori|Alternativa|Kuptimi
 setw(n)|cout.width(n)|Shkruaj rezultatin në `n` karaktere, duke shtuar karaktere mbushëse (mostra) nëse ka nevojë.
 setfill(c)|cout.fill(c)|Hapësirat e shtuara mbushi me karakterin `c` - mostrën.
 setprecision(n)|cout.precision(n)|Kufizo numrat me presje në `n` shifra.
+setbase(base)|-|Vendos bazën e numrave të shtypur.
 
 ---
 
@@ -693,7 +676,7 @@ setprecision(n)|cout.precision(n)|Kufizo numrat me presje në `n` shifra.
 
 Supozojmë që streami (cout) ka precizitetin `n`. Kemi tri lloje të shfaqjes së numrave me presje.
 
-1. `default` - kufizohet dalja në `n` shifra total (para dhe pas presjes).
+1. default - kufizohet dalja në `n` shifra total (para dhe pas presjes).
 2. `std::fixed` - kufizohet dalja në `n` shifra pas presjes. 
 3. `std::scientific` - kufizohet dalja në `n` shifra pas presjes, ndërsa pjesa e plotë gjithmonë është 1 shifrore. Eksponenti përdoret për ta lëvizur presjen.
 
@@ -704,7 +687,7 @@ Supozojmë që streami (cout) ka precizitetin `n`. Kemi tri lloje të shfaqjes s
 ```text
 Jepni vleren ne euro: 250
 Jepni raten e shkembimit: 1.16
-Vlera ne dollar: 290.00
+Vlera ne dollar: $290.00
 ```
 
 ---
@@ -712,11 +695,146 @@ Vlera ne dollar: 290.00
 **Detyrë:** Të shfaqen rezultatet e provimit në formë tabele si në vijim. Të përdoret manipulatori `setw` dhe `setfill`.
 
 ```text
- Lenda..................Nota
- Matematike...............10
- Fizike....................7
- Gjuhe Programuese.........8
+ Lenda...................Nota
+ Matematike................10
+ Fizike.....................7
+ Gjuhe Programuese..........8
 ``` 
+
+---
+
+## Operatorët e krahasimit
+
+<!-- .slide: style="font-size: 0.7em" -->
+
+Këta operatorë krahasojnë vlerat dhe kthejnë rezultat boolean, dmth. saktë ose pasaktë.
+
+Operatori|Kuptimi
+-|-
+`a == b`|A janë të barabarta ana e majtë dhe e djathtë?
+`a > b`|A është ana e majtë më e madhe se ana e djathtë?
+`a >= b`|A është ana e majtë më e madhe ose baraz me anën e djathtë?
+`a < b`|A është ana e majtë më e vogël se ana e djathtë?
+`a <= b`|A është ana e majtë më e vogël ose baraz me anën e djathtë?
+
+---
+
+## Operatorët logjik
+
+Veprojnë me vlera booleane.
+
+Operatori|Kuptimi
+-|-
+`a && b`|Kthen `true` kur **`a` dhe `b`** janë true.
+`a ∣∣ b`|Kthen `true` kur **`a` ose `b`** janë true.
+`!a`|Kthen të **kundërtën e `a`**.
+
+---
+
+Përparësia e operatorëve logjik:
+
+1. Negacioni `!`
+2. Dhe logjike `&&`
+3. Ose logjike `||`
+
+Përmes kllapave mund të caktojmë prioritet tjetër.
+
+```cpp
+a && !(b || c)
+```
+
+---
+
+## Kushtëzimet
+
+Mundësojnë ekzekutimin e një blloku vetëm nëse vlen kushti.
+
+```cpp
+if (kushti) {
+  blloku;
+}
+```
+
+Kushti duhet të jetë **shprehje** e tipit **bool** (vërtetësisë).
+
+---
+
+Shembull:
+
+```cpp
+if (piket >= 50) {
+  cout << "Keni kaluar provimin." << endl;
+}
+```
+
+---
+
+Kushtëzimi me dy degëzime:
+
+```cpp
+if (kushti) {
+  blloku1;
+} else {
+  blloku2;
+}
+```
+
+Nëse vlen **kushti**, ekzekutohet **blloku1**, nëse nuk vlen, ekzekutohet **blloku2**.
+
+Nuk ka mundësi të ekzekutohen të dy blloqet përnjëheri - ose njëra ose tjetra.
+
+---
+
+**Detyrë:** Të kërkohet numri i pikëve nga tastiera (numër i plotë), dhe nëse pikët janë mbi ose baraz 50 të shfaqet "Keni kaluar provimin", përndryshe të shfaqet "Nuk keni kaluar provimin".
+
+```text
+Jepni piket: 67
+Keni kaluar provimin
+```
+
+```text
+Jepni piket: 32
+Nuk keni kaluar provimin
+```
+
+---
+
+Kushtëzimi me shumë degë:
+
+```cpp
+if (kushti1) {
+  blloku1;
+} else if (kushti2) {
+  blloku2;
+} else if (kushti3) {
+  blloku3;
+} else {
+  blloku4;
+}
+```
+
+Ekzekutohet blloku i parë i cili përmbush kushtin përkatës. Nëse asnjëri kusht nuk përmbushet ekzekutohet blloku 4.
+
+---
+
+**Detyrë:** Të caktohet nota varësisht nga numri i pikëve sipas tabelës në vijim.
+
+Nota|Pikët
+-|-
+10|90+
+9|80-89
+8|70-79
+7|60-69
+6|50-59
+5|Përfundi 50
+
+---
+
+**Detyrë:** Të lexohen dy numra të plotë nga tastiera. Nëse të dy numrat janë pozitiv të shfaqet mesazhi "Numrat janë pozitiv", nëse të dy numrat janë negativ, të shfaqet mesazhi "Numrat janë negativ". Nëse numrat janë zero ose të përzier, të shfaqet mesazhi "Numrat janë të përzier".
+
+---
+
+## Detyra shtesë
 
 ---
 
@@ -744,6 +862,31 @@ Hipotenuza e trekendeshit me katetet a=4 dhe b=3 eshte c=5.
 ```
 
 **Kujtesë:** $\;c=\sqrt{a^2+b^2}$
+
+---
+
+**Detyrë:** Të lexohet një numër i plotë nga tastiera, dhe të tregohet nëse ai numër është çift apo tek.
+
+```text
+Shtypni numrin: 7
+Keni shtypur numer tek.
+```
+
+---
+
+**Detyrë:** Të lexohen dy numra të plotë nga tastiera. Të tregohet nëse numrat janë të plotëpjestueshëm ndërmjet veti (nuk ka rëndësi cili me cilin).
+
+```text
+Shtypni a: 5
+Shtypni b: 10
+Numrat jane te plotepjestueshem.
+```
+
+```text
+Shtypni a: 7
+Shtypni b: 2
+Numrat nuk jane te plotepjestueshem.
+```
 
 ---
 

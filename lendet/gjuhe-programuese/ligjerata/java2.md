@@ -799,6 +799,17 @@ Nuk keni kaluar provimin
 
 ---
 
+**Detyrë:** Të lexohet nga tastiera një numër i plotë $x$. Të llogaritet dhe të shfaqet vlera $y$ sipas funksionit:
+
+$$
+y = \begin{cases}
+2x - 3 & x \geq 5 \\
+x^2 + 1 & x < 5
+\end{cases}
+$$
+
+---
+
 Kushtëzimi me shumë degë:
 
 ```cpp
@@ -870,6 +881,15 @@ Hipotenuza e trekendeshit me katetet a=4 dhe b=3 eshte c=5.
 ```text
 Shtypni numrin: 7
 Keni shtypur numer tek.
+```
+
+---
+
+**Detyrë:** Të lexohet një numër i plotë nga tastiera, dhe të shfaqet vlera absolute e tij.
+
+```text
+Shtypni numrin: -15
+Vlera absolute e numrit: 15
 ```
 
 ---

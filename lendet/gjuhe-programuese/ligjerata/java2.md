@@ -828,7 +828,7 @@ Ekzekutohet blloku i parë i cili përmbush kushtin përkatës. Nëse asnjëri k
 
 ---
 
-**Detyrë:** Të caktohet nota varësisht nga numri i pikëve sipas tabelës në vijim.
+**Detyrë:** Të caktohet dhe të shfaqet nota varësisht nga numri i pikëve sipas tabelës në vijim.
 
 Nota|Pikët
 -|-

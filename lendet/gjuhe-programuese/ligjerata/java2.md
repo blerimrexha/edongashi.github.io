@@ -58,7 +58,19 @@ int main() {
 
 ---
 
-Të krijohet një projekt i ri dhe të shkruhet programi i cili shfaq tekstin "**Pershendetje**" në ekran.
+Të krijohet një projekt i ri dhe të shkruhet programi i cili shfaq këtë tekst në ekran:
+
+```text
+Përshëndetje!
+
+Po mësojmë gjuhën programuese "C++".
+```
+
+Ndihmesë: karakteri `ë` shkruhet `\x89`
+
+```cpp
+"\x89"
+```
 
 ---
 
@@ -83,10 +95,10 @@ $$
 
 Kemi disa lloje të të dhënave:
 
-1. Tipet numerike
-2. Tipi i vërtetësisë - boolean
-3. Tipet tekstuale - karakteret dhe stringjet
-4. Tipet komplekse
+1. Tipet numerike.
+2. Tipi i vërtetësisë - boolean.
+3. Tipet tekstuale - karakteret dhe stringjet.
+4. Tipet komplekse.
 
 ---
 
@@ -101,7 +113,7 @@ Ndahen në dy kategori kryesore:
 
 <!-- .slide: style="font-size: 0.6em" -->
 
-Numrat e plotë (integer) **me** shenjë:
+Numrat e plotë (integer) **me shenjë**:
 
 Tipi|Madhësia|Vlerat
 ---|---|---:
@@ -115,7 +127,7 @@ Tipi|Madhësia|Vlerat
 
 <!-- .slide: style="font-size: 0.6em" -->
 
-Numrat e plotë (integer) **pa** shenjë:
+Numrat e plotë (integer) **pa shenjë**:
 
 Tipi|Madhësia|Vlerat
 ---|---|---:
@@ -228,6 +240,8 @@ Nëse dëshirojmë ta inicializojmë me vlerë fillestare:
 int variabla = 42;
 ```
 
+Programi "rezervon" hapësirë për ta ruajtur këtë të dhënë.
+
 ---
 
 **Shembull**
@@ -243,6 +257,13 @@ cout << nr_studenteve; // Çka na shfaqet?
 ---
 
 Variablave ia lëmë emrin sipas dëshirës, me kushtin që nuk është fjalë kyçe e gjuhës programuese, psh. `int`, `float`, etj.
+
+```cpp
+int mosha;
+double nota_mesatare;
+bool eshte_student;
+string emri;
+```
 
 ---
 
@@ -268,6 +289,23 @@ cout << "Keni shtypur a=" << a << " dhe b=" << b << endl;
 ```
 
 Programi "mban në mend" numrat $a$ dhe $b$.
+
+---
+
+**Detyrë:** Të shkruhet programi i cili lexon 3 numra të plotë dhe pastaj i shfaq ata.
+
+Për shembull, shfrytëzuesi ka shtypur: $a=15,\;b=-2,\;c=3$
+
+```text
+Jepni vleren a: 15
+Jepni vleren b: -2
+Jepni vleren c: 3
+
+Keni shtypur vlerat:
+a = 15
+b = -2
+c = 3
+```
 
 ---
 
@@ -316,6 +354,17 @@ a = "Tung"; // Nuk ka kuptim.
 
 ---
 
+Disa shprehje nuk mund të vendosën në anën e majtë:
+
+```cpp
+2 = 1 + 5 // Nuk ka kuptim!
+```
+
+- **LValue** - shprehjet të cilat mund të paraqiten në anën e majtë - zakonisht variablat.
+- **RValue** - shprehjet që mund të paraqiten në anën e djathtë - shprehjet matematikore, variablat që kanë vlerë, rezultatet e funksioneve, etj.
+
+---
+
 Analizojeni kodin në vijim:
 
 ```cpp
@@ -333,17 +382,333 @@ Na shfaqet:
 4
 ```
 
+Pse?
+
 ---
 
+```cpp
+a = 3;
+a = a + 1;
+// a == 4
+```
+
 $$
-\underbrace{a}_{\text{Ana e majtë}} = \underbrace{a + 1}_{\text{Ana e djathtë}}
+\underbrace{a}_{\text{Ana e majtë}} \leftarrow \underbrace{a + 1}_{\text{Ana e djathtë}}
 $$
 
 Llogaritet shprehja e djathtë:
 
 $$
 \begin{array}{rl}
-a &= 3 + 1 \\
-a &= 4
+a &\leftarrow \overbrace{a}^{3} + 1 \\
+a &\leftarrow 3 + 1 \\
+a &\leftarrow 4
 \end{array}
+$$
+
+---
+
+**Shembull**: Është dhënë vlera $a=21$, ndërsa vlera $b$ duhet të jepet nga tastiera. Të llogaritet vlera $c=a+b$ dhe të shfaqet në ekran.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a = 21;
+  int b;
+  int c;
+
+  cin >> b; // Vlera b lexohet nga tastiera.
+  c = a + b;
+
+  cout << "Vlera e a+b eshte: " << c << endl;
+}
+```
+
+---
+
+## Operatorët aritmetikor
+
+```cpp
+double a = 10.0;
+double b = 4.0;
+```
+
+Veprimi|Operatori|Shprehja|Rezultati
+-|:-:|:-:|--:
+Mbledhja|`+`|`a + b`|`14.0`
+Zbritja|`-`|`a - b`|`6.0`
+Shumëzimi|`*`|`a * b`|`40.0`
+Pjesëtimi|`/`|`a / b`|`2.5`
+Modulimi|`%`|`a % b`|`2.0`
+
+---
+
+Shumëzimi dhe pjesëtimi kanë përparësi ndaj mbledhjes dhe zbritjes.
+
+```cpp
+int a = 2 + 2 * 2
+cout << a;
+```
+
+Na shfaqet:
+
+```text
+6
+```
+
+---
+
+Përmes kllapave mund të caktojmë përparësi tjetër të operatorëve.
+
+```cpp
+int a = (2 + 2) * 2;
+cout << a;
+```
+
+Na shfaqet:
+
+```text
+8
+```
+
+---
+
+**Detyrë:** Të shkruhet programi i cili lexon 3 numra me presje dhe ia llogarit mesatarën e tyre.
+
+```text
+Jepni vleren a: 3.2
+Jepni vleren b: 6
+Jepni vleren c: 1.3
+
+Vlera mesatare: 3.5
+```
+
+---
+
+**Detyrë:** Të lexohen nga tastiera brinjët e drejtkëndëshit, pastaj të llogariten perimetri dhe sipërfaqja (në variabla), dhe të shfaqen në ekran.
+
+Për shembull $a=5,\;b=3\; \Rightarrow \; P=16,\;S=15$
+
+```text
+Jepni brinjen a: 5
+Jepni brinjen b: 3
+Perimetri i drejtkendeshit: 16
+Siperfaqja e drejtkendeshit: 15
+```
+
+**Kujtesë:** $\;S=ab,\; P=2(a+b)$
+
+---
+
+## Operatorët shkurtesë
+
+Shpesh kemi nevojë ta zmadhojmë ose zvogëlojmë një variabël për një vlerë të caktuar.
+
+---
+
+Shkurtesa|Kuptimi
+:-:|:-:
+`a += x`|`a = a + x`
+`a -= x`|`a = a - x`
+`a *= x`|`a = a * x`
+`a /= x`|`a = a / x`
+`a %= x`|`a = a % x`
+
+---
+
+**Shembull**
+
+```cpp
+int a = 7;
+int b = 2;
+a += b; // Rrite a per b.
+b -= 1; // Zvogeloje b per 1.
+cout << "Vlera e a: " << a << endl;
+cout << "Vlera e b: " << b << endl;
+```
+
+Shfaqet:
+
+```text
+Vlera e a: 9
+Vlera e b: 1
+```
+
+
+---
+
+Shkurtesat për inkrement dhe dekrement.
+
+Shkurtesa|Kuptimi
+:-:|:-
+`a++`|Ktheje `a`, pastaj rrite për `1`
+`++a`|Rrite `a` për `1`, pastaj ktheje
+`a--`|Ktheje `a`, pastaj zvogëloje për `1`
+`--a`|Zvogëloje `a` për `1`, pastaj ktheje
+
+---
+
+**Shembulli 1: `a++`**
+
+```cpp
+int a = 5;
+cout << "Para inkrementimit: " << a << endl;
+a++;
+cout << "Pas inkrementimit: " << a << endl;
+```
+
+Shfaqet:
+
+```text
+Para inkrementimit: 5
+Pas inkrementimit: 6
+```
+
+---
+
+**Shembulli 2: `a++`**
+
+```cpp
+int a = 5;
+cout << "Para inkrementimit: " << a << endl;
+cout << "Gjate inkrementimit: " << a++ << endl;
+cout << "Pas inkrementimit: " << a << endl;
+```
+
+Shfaqet:
+
+```text
+Para inkrementimit: 5
+Gjate inkrementimit: 5
+Pas inkrementimit: 6
+```
+
+---
+
+**Shembulli 3: `++a`**
+
+```cpp
+int a = 5;
+cout << "Para inkrementimit: " << a << endl;
+cout << "Gjate inkrementimit: " << ++a << endl;
+cout << "Pas inkrementimit: " << a << endl;
+```
+
+Shfaqet:
+
+```text
+Para inkrementimit: 5
+Gjate inkrementimit: 6
+Pas inkrementimit: 6
+```
+
+---
+
+## Funksionet matematikore
+
+Kur e përfshijmë headerin `<math.h>`, na mundësohet thirrja e funksioneve matematikore sikur:
+
+Funskioni|Emri|Shembull|Interpretimi
+-|-|-|:-:
+Rrënja katrore|`sqrt`|`sqrt(16)`|$\sqrt{16}$
+Ngritja në fuqi|`pow`|`pow(2, 4)`|$2^4$
+Sinusi|`sin`|`sin(0)`|$\sin{(0_\text{rad})}$
+Kosinusi|`cos`|`cos(3.14)`|$\cos{(\pi_\text{rad})}$
+
+Dhe tjera...
+
+---
+
+## Konstantet
+
+Ndonjëherë vlera e variables është fikse dhe nuk ndryshon asnjëherë.
+
+Këto quhen konstante dhe shkruhen duke ia shtuar fjalën `const` përpara deklarimit të variablës:
+
+```cpp
+const double pi = 3.14;
+const int a = 4;
+```
+
+---
+
+**Detyrë:** Të llogaritet hipotenuza e trekëndëshit nëse dihet katetja $a=4$ (konstante) dhe katetja $b$ jepet nga tastiera.
+
+```text
+Të jepet vlera e b: 3
+Hipotenuza e trekendeshit me katetet a=4 dhe b=3 eshte c=5.
+```
+
+**Kujtesë:** $\;c=\sqrt{a^2+b^2}$
+
+---
+
+**Detyrë:** Të lexohen numrat e plotë $a$ dhe $b$ nga tastiera, dhe pastaj t'iu ndërrohen vlerat mes veti.
+
+Shembull:
+
+```text
+Shtypni a: 10
+Shtypni b: 3
+Para nderrimit:
+a = 10, b = 3
+Pas nderrimit:
+a = 3, b = 10
+```
+
+---
+
+**Detyrë:** Të bëhet shkëmbimi i valutës nga euro (€) në dollar ($), nëse rata e këmbimit jepet nga tastiera.
+
+```text
+Jepni vleren ne euro: 250
+Jepni raten e shkembimit: 1.16
+Vlera ne dollar: 290
+```
+
+---
+
+**Detyrë:** Të gjendet sipërfaqja dhe perimetri i rrethit, nëse rrezja $r$ jepet nga tastiera. Vlera e PI ($\pi$) të deklarohet si konstante.
+
+```text
+Jepni vleren e rrezes: 3
+Perimetri i rrethit: 18.84
+Siperfaqja e rrethit: 28.26
+```
+
+**Kujtesë:** $\;P=2\pi r,\; S=\pi r^2,\;\pi\approx 3.14$
+
+---
+
+**Detyrë:** Të deklarohet variabla $shuma=0$, dhe të lexohen pesë numrat e ardhshëm nga tastiera. Secili numër i lexuar t'i shtohet shumës.
+
+```text
+Jepni numer: 3
+Jepni numer: 1
+Jepni numer: 2
+Jepni numer: 7
+Jepni numer: 4
+Totali: 17
+```
+
+---
+
+**Detyrë:** Të shkruhet nga një program për secilën formulë më poshtë.
+
+$$
+F = ma
+$$
+
+$$
+v = \frac{s}{t}
+$$
+
+$$
+E = mc^2
+$$
+
+$$
+y = \sqrt{2x^2 + 3}
 $$

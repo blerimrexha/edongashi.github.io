@@ -1,4 +1,4 @@
-## Gjuhë Programuese
+## Gjuhë Programuese - Java 1
 
 Edon Gashi
 
@@ -432,7 +432,7 @@ Siç po shihet më lartë, mund të lidhen operatorët `<<` njëri pas tjetrit.
 Ekzistojnë disa lloje të të dhënave. Kryesoret:
 
 Emri|Përshkrimi|Shembuj
--|-
+---|---|---
 int|Numër i plotë|$-2,\,0,\,3,\,15$
 float|Numër me presje|$-1.2,\,0.0,\,3.5$
 char|Karakter i vetëm|$\texttt{'a'},\,\texttt{'b'},\,\texttt{'\n'}$

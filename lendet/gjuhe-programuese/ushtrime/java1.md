@@ -52,7 +52,7 @@ Në editor, shkruajmë këtë kod:
 using namespace std;
 
 int main() {
-  cout << "Pershendetje!" << endl;
+  cout << "Pershendetje" << endl;
   return 0;
 }
 ```

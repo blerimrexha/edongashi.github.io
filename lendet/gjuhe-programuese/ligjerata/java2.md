@@ -475,7 +475,7 @@ Na shfaqet:
 
 ---
 
-**Detyrë:** Të shkruhet programi i cili lexon 3 numra me presje dhe ia llogarit mesatarën e tyre.
+**Detyrë:** Të shkruhet programi i cili lexon 3 numra me presje dhe llogarit mesatarën e tyre.
 
 ```text
 Jepni vleren a: 3.2
@@ -499,6 +499,61 @@ Siperfaqja e drejtkendeshit: 15
 ```
 
 **Kujtesë:** $\;S=ab,\; P=2(a+b)$
+
+---
+
+## Funksionet matematikore
+
+Kur e përfshijmë headerin `<math.h>`, na mundësohet thirrja e funksioneve matematikore sikur:
+
+Funskioni|Emri|Shembull|Interpretimi
+-|-|-|:-:
+Rrënja katrore|`sqrt`|`sqrt(16)`|$\sqrt{16}$
+Ngritja në fuqi|`pow`|`pow(2, 4)`|$2^4$
+Sinusi|`sin`|`sin(0)`|$\sin{(0_\text{rad})}$
+Kosinusi|`cos`|`cos(3.14)`|$\cos{(\pi_\text{rad})}$
+
+Dhe tjera...
+
+---
+
+**Detyrë:** Janë dhënë vlerat reale $a=2.0,\;b=3.5,\;c=1.2$.
+
+Të llogariten shprehjet:
+
+$$
+\begin{array}{rlcr}
+1) & a + 2c - \frac{7}{9}b & \Rightarrow & 1.67 \\
+2) & a + 2(1.1 + b) - c & \Rightarrow & 10 \\
+3) & b^a - 2c & \Rightarrow & 9.85  \\
+4) & \sqrt{\frac{a^2 + b^2}{c + 1}} & \Rightarrow & 2.71 \\
+\end{array}
+$$
+
+---
+
+## Konstantet
+
+Ndonjëherë vlera e variables është fikse dhe nuk ndryshon asnjëherë.
+
+Këto quhen konstante dhe shkruhen duke ia shtuar fjalën `const` përpara deklarimit të variablës:
+
+```cpp
+const double pi = 3.14;
+const int a = 4;
+```
+
+---
+
+**Detyrë:** Të gjendet sipërfaqja dhe perimetri i rrethit, nëse rrezja $r$ jepet nga tastiera. Vlera e PI ($\pi$) të deklarohet si konstante.
+
+```text
+Jepni vleren e rrezes: 3
+Perimetri i rrethit: 18.84
+Siperfaqja e rrethit: 28.26
+```
+
+**Kujtesë:** $\;P=2\pi r,\; S=\pi r^2,\;\pi\approx 3.14$
 
 ---
 
@@ -535,7 +590,6 @@ Shfaqet:
 Vlera e a: 9
 Vlera e b: 1
 ```
-
 
 ---
 
@@ -606,42 +660,26 @@ Pas inkrementimit: 6
 
 ---
 
-## Funksionet matematikore
-
-Kur e përfshijmë headerin `<math.h>`, na mundësohet thirrja e funksioneve matematikore sikur:
-
-Funskioni|Emri|Shembull|Interpretimi
--|-|-|:-:
-Rrënja katrore|`sqrt`|`sqrt(16)`|$\sqrt{16}$
-Ngritja në fuqi|`pow`|`pow(2, 4)`|$2^4$
-Sinusi|`sin`|`sin(0)`|$\sin{(0_\text{rad})}$
-Kosinusi|`cos`|`cos(3.14)`|$\cos{(\pi_\text{rad})}$
-
-Dhe tjera...
-
----
-
-## Konstantet
-
-Ndonjëherë vlera e variables është fikse dhe nuk ndryshon asnjëherë.
-
-Këto quhen konstante dhe shkruhen duke ia shtuar fjalën `const` përpara deklarimit të variablës:
-
-```cpp
-const double pi = 3.14;
-const int a = 4;
-```
-
----
-
-**Detyrë:** Të llogaritet hipotenuza e trekëndëshit nëse dihet katetja $a=4$ (konstante) dhe katetja $b$ jepet nga tastiera.
+**Detyrë:** Të deklarohet variabla $shuma=0$, dhe të lexohen pesë numrat e ardhshëm nga tastiera. Secili numër i lexuar t'i shtohet shumës.
 
 ```text
-Të jepet vlera e b: 3
-Hipotenuza e trekendeshit me katetet a=4 dhe b=3 eshte c=5.
+Jepni numer: 3
+Jepni numer: 1
+Jepni numer: 2
+Jepni numer: 7
+Jepni numer: 4
+Totali: 17
 ```
 
-**Kujtesë:** $\;c=\sqrt{a^2+b^2}$
+---
+
+**Detyrë:** Të bëhet shkëmbimi i valutës nga euro (€) në dollar ($), nëse rata e këmbimit jepet nga tastiera.
+
+```text
+Jepni vleren ne euro: 250
+Jepni raten e shkembimit: 1.16
+Vlera ne dollar: 290
+```
 
 ---
 
@@ -660,55 +698,43 @@ a = 3, b = 10
 
 ---
 
-**Detyrë:** Të bëhet shkëmbimi i valutës nga euro (€) në dollar ($), nëse rata e këmbimit jepet nga tastiera.
+**Detyrë:** Të llogaritet hipotenuza e trekëndëshit nëse katetet $a$ dhe $b$ jepen nga tastiera.
 
 ```text
-Jepni vleren ne euro: 250
-Jepni raten e shkembimit: 1.16
-Vlera ne dollar: 290
+Të jepet vlera e a: 4
+Të jepet vlera e b: 3
+Hipotenuza e trekendeshit me katetet a=4 dhe b=3 eshte c=5.
 ```
+
+**Kujtesë:** $\;c=\sqrt{a^2+b^2}$
 
 ---
 
-**Detyrë:** Të gjendet sipërfaqja dhe perimetri i rrethit, nëse rrezja $r$ jepet nga tastiera. Vlera e PI ($\pi$) të deklarohet si konstante.
+**Detyrë:** Të shkruhet programi që bën konvertimin nga Celsius në Fahrenheit. Vlera në Celsius lexohet nga tastiera.
 
 ```text
-Jepni vleren e rrezes: 3
-Perimetri i rrethit: 18.84
-Siperfaqja e rrethit: 28.26
+Te jepet vlera ne Celsius: 25
+Vlera ne Fahrenheit: 77
 ```
 
-**Kujtesë:** $\;P=2\pi r,\; S=\pi r^2,\;\pi\approx 3.14$
-
----
-
-**Detyrë:** Të deklarohet variabla $shuma=0$, dhe të lexohen pesë numrat e ardhshëm nga tastiera. Secili numër i lexuar t'i shtohet shumës.
-
-```text
-Jepni numer: 3
-Jepni numer: 1
-Jepni numer: 2
-Jepni numer: 7
-Jepni numer: 4
-Totali: 17
-```
+**Kujtesë:** $\;F=\frac{9}{5}C + 32$
 
 ---
 
 **Detyrë:** Të shkruhet nga një program për secilën formulë më poshtë.
 
 $$
-F = ma
+F = ma \tag{1}
 $$
 
 $$
-v = \frac{s}{t}
+v = \frac{s}{t} \tag{2}
 $$
 
 $$
-E = mc^2
+E = mc^2 \tag{3}
 $$
 
 $$
-y = \sqrt{2x^2 + 3}
+y = -5\times\sqrt{2x^2 + 3} \tag{4}
 $$

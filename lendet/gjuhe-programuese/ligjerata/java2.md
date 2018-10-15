@@ -885,6 +885,14 @@ Keni shtypur numer tek.
 
 ---
 
+**Detyrë:** Të lexohen dy numra nga tastiera. Të shfaqet numri më i madh nga këta dy.
+
+---
+
+**Detyrë:** Të lexohet një karakter nga tastiera. Të tregohet nëse ky karakter është shkronjë e madhe (A-Z), shkronjë e vogël (a-z), apo diçka tjetër.
+
+---
+
 **Detyrë:** Të lexohet një numër i plotë nga tastiera, dhe të shfaqet vlera absolute e tij.
 
 ```text

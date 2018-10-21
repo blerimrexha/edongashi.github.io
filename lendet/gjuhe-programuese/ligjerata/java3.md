@@ -207,7 +207,7 @@ x^2 + 1 & \text{kur}\; x < 7
 \end{cases}
 $$
 
-**Bonus:** Të shtohet rasti kur $x < 4,\; y = 3\times|x-1|$
+**Bonus:** Të shtohet rasti kur $x < 4,\; y = 3 \times |x-1|$
 
 ---
 
@@ -284,7 +284,7 @@ Pse?
 
 ---
 
-**`(a ? b : c)`** është **shprehje** e cila mund të përdoret kudo që kemi **RValue**. Kjo shprehje ka vlerën ose **$b$** ose **$c$**, varësisht nëse vlen kushti **$a$**.
+**`(a ? b : c)`** është **shprehje** e cila mund të përdoret kudo që kemi **RValue**. Kjo shprehje ka vlerën ose **`b`** ose **`c`**, varësisht nëse vlen kushti **`a`**.
 
 ```cpp
 cout << (piket >= 50 ? "Keni kaluar" : "Nuk keni kaluar");

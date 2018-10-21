@@ -287,7 +287,7 @@ int main() {
   cout << "Shtypni b: ";
   cin  >> b;
 
-  cout << "Pas nderrimit:"
+  cout << "Para nderrimit:"
        << "a = " << a 
        << ", b = " << b << endl;
 

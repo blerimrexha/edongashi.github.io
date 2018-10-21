@@ -207,7 +207,16 @@ x^2 + 1 & \text{kur}\; x < 7
 \end{cases}
 $$
 
-**Bonus:** Të shtohet rasti kur $x < 4,\; y = 3 \times ∣x-1∣$
+**Bonus:** Të shtohet rasti kur $x < 4$:
+
+
+$$
+y = \begin{cases}
+2x - 3 & \text{kur}\; x \geq 7 \\
+x^2 + 1 & \text{kur}\; 4 \leq x < 7 \\
+3 \times |x-1| & \text{kur}\; x < 4
+\end{cases}
+$$
 
 ---
 

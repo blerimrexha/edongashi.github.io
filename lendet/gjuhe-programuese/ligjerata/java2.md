@@ -294,8 +294,6 @@ Programi "mban në mend" numrat $a$ dhe $b$.
 
 **Detyrë:** Të shkruhet programi i cili lexon 3 numra të plotë dhe pastaj i shfaq ata.
 
-Për shembull, shfrytëzuesi ka shtypur: $a=15,\;b=-2,\;c=3$
-
 ```text
 Jepni vleren a: 15
 Jepni vleren b: -2
@@ -448,7 +446,7 @@ Modulimi|`%`|`a % b`|`2.0`
 Shumëzimi dhe pjesëtimi kanë përparësi ndaj mbledhjes dhe zbritjes.
 
 ```cpp
-int a = 2 + 2 * 2
+int a = 2 + 2 * 2;
 cout << a;
 ```
 
@@ -488,8 +486,6 @@ Vlera mesatare: 3.5
 ---
 
 **Detyrë:** Të lexohen nga tastiera brinjët e drejtkëndëshit, pastaj të llogariten perimetri dhe sipërfaqja (në variabla), dhe të shfaqen në ekran.
-
-Për shembull $a=5,\;b=3\; \Rightarrow \; P=16,\;S=15$
 
 ```text
 Jepni brinjen a: 5
@@ -660,8 +656,6 @@ Totali: 17
 ---
 
 **Detyrë:** Të lexohen numrat e plotë $a$ dhe $b$ nga tastiera, dhe pastaj t'iu ndërrohen vlerat mes veti.
-
-Shembull:
 
 ```text
 Shtypni a: 10

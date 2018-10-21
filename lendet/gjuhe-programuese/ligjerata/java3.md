@@ -207,7 +207,7 @@ x^2 + 1 & \text{kur}\; x < 7
 \end{cases}
 $$
 
-**Bonus:** Të shtohet rasti kur $x < 4,\; y = \frac{|x-1|}{2}$
+**Bonus:** Të shtohet rasti kur $x < 4,\; y = 3\times|x-1|$
 
 ---
 

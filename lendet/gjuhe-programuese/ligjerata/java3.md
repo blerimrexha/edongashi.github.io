@@ -327,9 +327,13 @@ Figurat i lidhim me shigjeta për ta përshkruar **algoritmin** tonë.
 
 **Detyrë:** Të lexohen dy numra nga tastiera. Të shfaqet numri më i madh nga këta dy.
 
+**Bonus:** Numri të shfaqet në formë decimale, heksadecimale, oktale, dhe binare.
+
 ---
 
 **Detyrë:** Të lexohet një karakter nga tastiera. Të tregohet nëse ky karakter është shkronjë e madhe (A-Z), shkronjë e vogël (a-z), apo diçka tjetër.
+
+**Bonus:** Të vizatohet bllok diagrami i këtij programi.
 
 ---
 
@@ -340,7 +344,7 @@ Shtypni numrin: 7
 Keni shtypur numer tek.
 ```
 
-**Bonus:** Të vizatohet bllok diagrami i këtij programi.
+**Bonus:** Të lexohen 5 numra të plotë dhe të gjendet shuma e numrave tek dhe çift.
 
 ---
 

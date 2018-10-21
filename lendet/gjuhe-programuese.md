@@ -10,7 +10,7 @@ noslides: true
 
 1. [Java 1 - Hyrje në C++](/lendet/gjuhe-programuese/ligjerata/java1)
 2. [Java 2 - Tipet dhe Variablat](/lendet/gjuhe-programuese/ligjerata/java2)
-2. [Java 3 - Formatimi, Kushtëzimet, Bllok diagramet](/lendet/gjuhe-programuese/ligjerata/java2)
+2. [Java 3 - Formatimi, Kushtëzimet, Bllok diagramet](/lendet/gjuhe-programuese/ligjerata/java3)
 
 ## Ushtrimet
 

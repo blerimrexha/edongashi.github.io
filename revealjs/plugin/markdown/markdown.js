@@ -62,7 +62,7 @@ function escapeMarkdown(string) {
       text = text.replace(new RegExp('\\n? {' + leadingWs + '}', 'g'), '\n');
     }
 
-    text = text.replace(/\$\$?(.|\r?\n)*?\$/mg, function (t) {
+    text = text.replace(/\$\$?(.|\r?\n)*?\$\$?/mg, function (t) {
       return escapeMarkdown(t)
     })
 

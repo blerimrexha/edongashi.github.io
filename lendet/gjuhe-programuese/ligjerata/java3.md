@@ -68,7 +68,7 @@ Vlera ne dollar: $290.00
  Gjuhe Programuese..........8
 ```
 
-**Bonus:** Vizatojeni me [box-drawing character](https://en.wikipedia.org/wiki/Box-drawing_character#DOS):
+**Bonus:** Të vizatohet me [box-drawing character](https://en.wikipedia.org/wiki/Box-drawing_character#DOS):
 
 ```text
 ╔══════════════════════╦════╗
@@ -295,19 +295,19 @@ E paraqesin algoritmin në formë vizuele.
 
 Urdhërat paraqiten me drejtkëndësha:
 
-![](java2/diag1.png) <!-- .element: style="border:none" -->
+![](/lendet/gjuhe-programuese/ligjerata/java2/diag1.png) <!-- .element: style="border:none" -->
 
 ---
 
 Hyrjet dhe daljet paraqiten me trapezoidët:
 
-![](java2/diag2.png) <!-- .element: style="border:none" -->
+![](/lendet/gjuhe-programuese/ligjerata/java2/diag2.png) <!-- .element: style="border:none" -->
 
 ---
 
 Kushtëzimet paraqiten me romb:
 
-![](java2/diag3.png) <!-- .element: style="border:none" -->
+![](/lendet/gjuhe-programuese/ligjerata/java2/diag3.png) <!-- .element: style="border:none" -->
 
 ---
 
@@ -317,7 +317,7 @@ Figurat i lidhim me shigjeta për ta përshkruar **algoritmin** tonë.
 
 ---
 
-![](java2/diag4.png) <!-- .element: style="border:none" -->
+![](/lendet/gjuhe-programuese/ligjerata/java2/diag4.png) <!-- .element: style="border:none" -->
 
 ---
 

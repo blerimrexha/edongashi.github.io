@@ -209,7 +209,6 @@ $$
 
 **Bonus:** Të shtohet rasti kur $x < 4$:
 
-
 $$
 y = \begin{cases}
 2x - 3 & \text{kur}\; x \geq 7 \\

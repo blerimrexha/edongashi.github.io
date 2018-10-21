@@ -37,6 +37,30 @@ setbase(base)|-|Vendos bazën e numrave të shtypur.
 
 ---
 
+**Shembull:**
+
+```cpp
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+  cout << setfill('*')
+       << setw(10)
+       << 15
+       << endl;
+  return 0;
+}
+```
+
+Na shfaqet:
+
+```text
+********15
+```
+
+---
+
 **Mënyrat e precizitetit**
 
 Supozojmë që streami (`cout`) ka precizitetin $n$. Kemi tri lloje të shfaqjes së numrave me presje.

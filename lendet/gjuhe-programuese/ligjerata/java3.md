@@ -47,7 +47,7 @@ Supozojmë që streami (`cout`) ka precizitetin $n$. Kemi tri lloje të shfaqjes
 
 ---
 
-**Detyrë:** Të bëhet shkëmbimi i valutës nga euro (€) në dollar ($), nëse rata e këmbimit jepet nga tastiera. Rezultati të shfaqet në 2 shifra pas presjes.
+**Detyrë:** Të bëhet shkëmbimi i valutës nga euro (€) në dollar ($) nëse rata e këmbimit jepet nga tastiera. Rezultati të shfaqet në 2 shifra pas presjes.
 
 ```text
 Jepni vleren ne euro: 250
@@ -140,7 +140,7 @@ if (kushti) {
 }
 ```
 
-Kushti duhet të jetë **shprehje e vërtetësisë** (bool).
+**Kushti** duhet të jetë **shprehje e vërtetësisë** (bool).
 
 --
 
@@ -194,7 +194,7 @@ Jepni piket: 32
 Nuk keni kaluar provimin
 ```
 
-**Bonus:** Të lexohen edhe pikët e provimit me gojë, dhe studenti kalon vetëm nëse të dyjat janë mbi 50.
+**Bonus:** Të lexohen edhe pikët e provimit me gojë, dhe studenti kalon vetëm nëse mesatarja është mbi 50 dhe secili provim i ka mbi 40. Nëse kalimi është me kusht të shfaqet në ekran.
 
 ---
 
@@ -211,9 +211,22 @@ $$
 
 ---
 
+**Detyrë:** Të lexohet nga tastiera një numër i plotë $x$. Të llogaritet vlera absolute e tij.
+
+Definicioni i vlerës absolute:
+
+$$
+|x| = \begin{cases}
+x & \text{kur}\; x \geq 0 \\
+-x & \text{kur}\; x < 0
+\end{cases}
+$$
+
+---
+
 **Operatori ternar (`?`)**
 
-Kur kemi rastin e degëzimit si në vijim:
+Shpesh kemi rastin me dy degëzime si në vijim:
 
 ```cpp
 if (kushti) {
@@ -223,13 +236,21 @@ if (kushti) {
 }
 ```
 
-Mund ta thjeshtojmë në:
+Këtë mund ta thjeshtojmë në:
 
 ```cpp
 y = kushti ? shprehja1 : shprehja2;
 ```
 
 ---
+
+Urdhëri:
+
+```cpp
+y = kushti ? shprehja1 : shprehja2
+```
+
+interpretohet kështu:
 
 $$
 y = \begin{cases}
@@ -238,7 +259,42 @@ shprehja2 & \text{nëse jo}
 \end{cases}
 $$
 
-Shembull:
+---
+
+Nga definicioni i vlerës absolute:
+
+$$
+|x| = \begin{cases}
+x & \text{kur}\; x \geq 0 \\
+-x & \text{kur}\; x < 0
+\end{cases}
+$$
+
+Në kod shkruhet kështu:
+
+```cpp
+vlera_absolute = (x >= 0 ? x : -x);
+```
+
+---
+
+**`(a > b ? a : b)`** është shprehje.
+
+Pse?
+
+---
+
+**`(a ? b : c)`** është **shprehje** e cila mund të përdoret kudo që kemi **RValue**. Kjo shprehje ka vlerën ose **$b$** ose **$c$**, varësisht nëse vlen kushti **$a$**.
+
+```cpp
+cout << (piket >= 50 ? "Keni kaluar" : "Nuk keni kaluar");
+
+vlera_absolute = (x >= 0 ? x : -x);
+```
+
+---
+
+**Shembull:** Gjetja e vlerës maksimale.
 
 ```cpp
 int a, b, max;
@@ -327,7 +383,11 @@ Figurat i lidhim me shigjeta për ta përshkruar **algoritmin** tonë.
 
 **Detyrë:** Të lexohen dy numra nga tastiera. Të shfaqet numri më i madh nga këta dy.
 
-**Bonus:** Numri të shfaqet në formë decimale, heksadecimale, oktale, dhe binare.
+**Bonus:** Të gjendet maksimumi i 3 numrave.
+
+---
+
+**Detyrë:** Të lexohet një numër i plotë, dhe pastaj të shfaqet në formë decimale, heksadecimale, oktale, dhe binare.
 
 ---
 
@@ -345,17 +405,6 @@ Keni shtypur numer tek.
 ```
 
 **Bonus:** Të lexohen 5 numra të plotë dhe të gjendet shuma e numrave tek dhe çift.
-
----
-
-**Detyrë:** Të lexohet një numër i plotë nga tastiera, dhe të shfaqet vlera absolute e tij.
-
-```text
-Shtypni numrin: -15
-Vlera absolute e numrit: 15
-```
-
-**Bonus:** Të vizatohet bllok diagrami i këtij programi.
 
 ---
 

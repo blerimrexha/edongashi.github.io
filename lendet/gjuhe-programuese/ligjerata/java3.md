@@ -355,7 +355,13 @@ Nota|Pikët
 
 ## Bllok diagramet
 
-E paraqesin algoritmin në formë vizuele.
+E paraqesin programin në formë vizuele.
+
+---
+
+Figurat i lidhim me shigjeta për ta përshkruar **algoritmin** tonë.
+
+**Algoritëm** - rregullat dhe hapat logjik të një programi.
 
 ---
 
@@ -374,12 +380,6 @@ Hyrjet dhe daljet paraqiten me trapezoidët:
 Kushtëzimet paraqiten me romb:
 
 ![](/lendet/gjuhe-programuese/ligjerata/java2/diag3.png) <!-- .element: style="border:none" -->
-
----
-
-Figurat i lidhim me shigjeta për ta përshkruar **algoritmin** tonë.
-
-**Algoritëm** - rregullat dhe hapat logjik të një programi.
 
 ---
 

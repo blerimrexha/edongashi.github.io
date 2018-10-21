@@ -68,7 +68,7 @@ int main() {
 
 ---
 
-**Detyrë:** Të shkruhet programi i cili lexon 3 numra me presje dhe llogarit mesatarën e tyre.
+**Detyrë:** Të shkruhet programi i cili lexon 3 numra me presje dhe llogaritë mesatarën e tyre.
 
 ```text
 Jepni vleren a: 3.2

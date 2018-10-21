@@ -473,7 +473,7 @@ Na shfaqet:
 
 ---
 
-**Detyrë:** Të shkruhet programi i cili lexon 3 numra me presje dhe llogarit mesatarën e tyre.
+**Detyrë:** Të shkruhet programi i cili lexon 3 numra me presje dhe llogaritë mesatarën e tyre.
 
 ```text
 Jepni vleren a: 3.2
@@ -671,8 +671,8 @@ a = 3, b = 10
 **Detyrë:** Të llogaritet hipotenuza e trekëndëshit nëse katetet $a$ dhe $b$ jepen nga tastiera.
 
 ```text
-Të jepet vlera e a: 4
-Të jepet vlera e b: 3
+Shtypni a: 4
+Shtypni b: 3
 Hipotenuza e trekendeshit me katetet a=4 dhe b=3 eshte c=5.
 ```
 

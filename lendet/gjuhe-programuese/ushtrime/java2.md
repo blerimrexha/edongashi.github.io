@@ -164,7 +164,7 @@ using namespace std;
 int main() {
   double a = 2.0;
   double b = 3.5;
-  double c= 1.2;
+  double c = 1.2;
 
   cout << a + 2 * c - 7.0 / 9.0 * b << endl;
   cout << a + 2 * (1.1 + b) - c << endl;

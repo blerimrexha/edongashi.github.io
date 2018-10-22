@@ -7,4 +7,3 @@ noslides: true
 # Lëndët
 
 - [Gjuhë Programuese](/lendet/gjuhe-programuese)
-

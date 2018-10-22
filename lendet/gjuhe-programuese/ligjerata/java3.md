@@ -254,6 +254,11 @@ x & \text{kur}\; x \geq 0 \\
 \end{cases}
 $$
 
+**Bonus:** Të llogaritet vlera absolute:
+
+1. Pa përdorur kushtëzime.
+2. Pa përdorur kushtëzime as krahasime.
+
 ---
 
 **Operatori ternar (`?`)**
@@ -408,6 +413,14 @@ Kushtëzimet paraqiten me romb:
 ---
 
 ![](/lendet/gjuhe-programuese/ligjerata/java2/diag4.png) <!-- .element: style="border:none" -->
+
+---
+
+**Detyrë:** Të vizatohet bllok diagrami për llogaritjen dhe shfaqjen e shumës në vijim. Parametri $n$ të merret si vlerë hyrëse.
+
+$$
+S=\sum_{i=0}^{n}{(2i+3)}
+$$
 
 ---
 

@@ -72,6 +72,21 @@ Ndihmesë: karakteri `ë` shkruhet `\x89`
 "\x89"
 ```
 
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "P\x89rsh\x89ndetje!" 
+       << endl
+       << endl
+       << "Po m\x89sojm\x89 gjuh\x89n programuese \"C++\".";
+  return 0;
+}
+```
+
 ---
 
 ## Tipet dhe Variablat
@@ -305,6 +320,32 @@ b = -2
 c = 3
 ```
 
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a, b, c;
+
+  cout << "Jepni vleren a: ";
+  cin  >> a;
+  cout << "Jepni vleren b: ";
+  cin  >> b;
+  cout << "Jepni vleren c: ";
+  cin  >> c;
+
+  cout << endl << "Keni shtypur vlerat:" << endl;
+  
+  cout << "a = " << a << endl
+       << "b = " << b << endl
+       << "c = " << c << endl;
+
+  return 0;
+}
+```
+
 ---
 
 ## Shprehjet
@@ -483,6 +524,30 @@ Jepni vleren c: 1.3
 Vlera mesatare: 3.5
 ```
 
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  double a, b, c, m;
+
+  cout << "Jepni vleren a: ";
+  cin  >> a;
+  cout << "Jepni vleren b: ";
+  cin  >> b;
+  cout << "Jepni vleren c: ";
+  cin  >> c;
+  cout << endl;
+  
+  m = (a + b + c) / 3.0;
+  cout << "Vlera mesatare: " << m << endl;
+
+  return 0;
+}
+```
+
 ---
 
 **Detyrë:** Të lexohen nga tastiera brinjët e drejtkëndëshit, pastaj të llogariten perimetri dhe sipërfaqja (në variabla), dhe të shfaqen në ekran.
@@ -495,6 +560,30 @@ Siperfaqja e drejtkendeshit: 15
 ```
 
 **Kujtesë:** $\;S=ab,\; P=2(a+b)$
+
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a, b, S, P;
+  
+  cout << "Jepni brinjen a: ";
+  cin  >> a;
+  cout << "Jepni brinjen b: ";
+  cin  >> b;
+
+  P = 2 * (a + b);
+  S = a * b;
+  
+  cout << "Perimetri i drejtkendeshit: " << P << endl;
+  cout << "Siperfaqja e drejtkendeshit: " << S << endl;
+
+  return 0;
+}
+```
 
 ---
 
@@ -526,6 +615,27 @@ $$
 \end{array}
 $$
 
+--
+
+```cpp
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+  double a = 2.0;
+  double b = 3.5;
+  double c = 1.2;
+
+  cout << a + 2 * c - 7.0 / 9.0 * b << endl;
+  cout << a + 2 * (1.1 + b) - c << endl;
+  cout << pow(b, a) - 2 * c << endl;
+  cout << sqrt((pow(a, 2) + pow(b, 2)) / (c + 1)) << endl;
+
+  return 0;
+}
+```
+
 ---
 
 ## Konstantet
@@ -550,6 +660,30 @@ Siperfaqja e rrethit: 28.26
 ```
 
 **Kujtesë:** $\;P=2\pi r,\; S=\pi r^2,\;\pi\approx 3.14$
+
+--
+
+```cpp
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+  const double pi = 3.14;
+  double r, P, S;
+
+  cout << "Jepni vleren e rrezes: ";
+  cin >> r;
+
+  P = 2 * pi * r;
+  S = pi * pow(r, 2);
+
+  cout << "Perimetri i rrethit: " << P << endl;
+  cout << "Siperfaqja e rrethit: " << S << endl;
+
+  return 0;
+}
+```
 
 ---
 
@@ -649,6 +783,42 @@ Jepni numer: 4
 Totali: 17
 ```
 
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int shuma = 0;
+  int numri;
+
+  cout << "Jepni numer: ";
+  cin >> numri;
+  shuma += numri;
+
+  cout << "Jepni numer: ";
+  cin >> numri;
+  shuma += numri;
+
+  cout << "Jepni numer: ";
+  cin >> numri;
+  shuma += numri;
+
+  cout << "Jepni numer: ";
+  cin >> numri;
+  shuma += numri;
+
+  cout << "Jepni numer: ";
+  cin >> numri;
+  shuma += numri;
+
+  cout << "Totali: " << shuma << endl;
+
+  return 0;
+}
+```
+
 ---
 
 ## Detyra shtesë
@@ -666,6 +836,36 @@ Pas nderrimit:
 a = 3, b = 10
 ```
 
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a, b, temp;
+
+  cout << "Shtypni a: ";
+  cin  >> a;
+  cout << "Shtypni b: ";
+  cin  >> b;
+
+  cout << "Para nderrimit:"
+       << "a = " << a 
+       << ", b = " << b << endl;
+
+  temp = a;
+  a = b;
+  b = temp;
+
+  cout << "Pas nderrimit:"
+       << "a = " << a 
+       << ", b = " << b << endl;
+
+  return 0;
+}
+```
+
 ---
 
 **Detyrë:** Të llogaritet hipotenuza e trekëndëshit nëse katetet $a$ dhe $b$ jepen nga tastiera.
@@ -678,6 +878,30 @@ Hipotenuza e trekendeshit me katetet a=4 dhe b=3 eshte c=5.
 
 **Kujtesë:** $\;c=\sqrt{a^2+b^2}$
 
+--
+
+```cpp
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+  double a, b, c;
+
+  cout << "Shtypni a: ";
+  cin  >> a;
+  cout << "Shtypni b: ";
+  cin  >> b;
+
+  c = sqrt(pow(a, 2) + pow(b, 2));
+
+  cout << "Hipotenuza e trekendeshit me katetet a="
+       << a << " dhe b=" << b << " eshte c=" << c << endl;
+
+  return 0;
+}
+```
+
 ---
 
 **Detyrë:** Të shkruhet programi që bën konvertimin nga Celsius në Fahrenheit. Vlera në Celsius lexohet nga tastiera.
@@ -688,6 +912,25 @@ Vlera ne Fahrenheit: 77
 ```
 
 **Kujtesë:** $\;F=\frac{9}{5}C + 32$
+
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  double celsius, fahrenheit;
+
+  cout << "Te jepet vlera ne Celsius: ";
+  cin  >> celsius;
+
+  fahrenheit = 9.0 / 5.0 * celsius + 32.0;
+  cout << "Vlera ne Fahrenheit: " << fahrenheit << endl;
+
+  return 0;
+}
+```
 
 ---
 
@@ -708,3 +951,94 @@ $$
 $$
 y = -5\times\sqrt{2x^2 + 3} \tag{4}
 $$
+
+--
+
+**(1)**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  double F, m, a;
+
+  cout << "Jepni m: ";
+  cin  >> m;
+  cout << "Jepni a: ";
+  cin  >> a;
+
+  F = m * a;
+  cout << "F = " << F << endl;
+
+  return 0;
+}
+```
+
+--
+
+**(2)**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  double v, s, t;
+
+  cout << "Jepni s: ";
+  cin  >> s;
+  cout << "Jepni t: ";
+  cin  >> t;
+
+  v = s / t;
+  cout << "v = " << v << endl;
+
+  return 0;
+}
+```
+
+--
+
+**(3)**
+
+```cpp
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+  const double c = 3e8;
+  double E, m;
+
+  cout << "Jepni m: ";
+  cin  >> m;
+
+  E = m * pow(c, 2);
+  cout << "E = " << E << endl;
+
+  return 0;
+}
+```
+
+--
+
+**(4)**
+
+```cpp
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+  double x, y;
+
+  cout << "Jepni x: ";
+  cin  >> x;
+
+  y = -5 * sqrt(2 * pow(x, 2) + 3);
+  cout << "y = " << y << endl;
+
+  return 0;
+}
+```

@@ -396,23 +396,23 @@ Figurat i lidhim me shigjeta për ta përshkruar **algoritmin** tonë.
 
 Urdhërat paraqiten me drejtkëndësha:
 
-![](/lendet/gjuhe-programuese/ligjerata/java3/diag1.png) <!-- .element: style="border:none" -->
+![](/lendet/gjuhe-programuese/java3/diag1.png) <!-- .element: style="border:none" -->
 
 ---
 
 Hyrjet dhe daljet paraqiten me trapezoidët:
 
-![](/lendet/gjuhe-programuese/ligjerata/java3/diag2.png) <!-- .element: style="border:none" -->
+![](/lendet/gjuhe-programuese/java3/diag2.png) <!-- .element: style="border:none" -->
 
 ---
 
 Kushtëzimet paraqiten me romb:
 
-![](/lendet/gjuhe-programuese/ligjerata/java3/diag3.png) <!-- .element: style="border:none" -->
+![](/lendet/gjuhe-programuese/java3/diag3.png) <!-- .element: style="border:none" -->
 
 ---
 
-![](/lendet/gjuhe-programuese/ligjerata/java3/diag4.png) <!-- .element: style="border:none" -->
+![](/lendet/gjuhe-programuese/java3/diag4.png) <!-- .element: style="border:none" -->
 
 ---
 

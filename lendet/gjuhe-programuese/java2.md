@@ -58,7 +58,7 @@ int main() {
 
 ---
 
-Të krijohet një projekt i ri dhe të shkruhet programi i cili shfaq këtë tekst në ekran:
+**Detyrë:** Të krijohet një projekt i ri dhe të shkruhet programi i cili shfaq këtë tekst në ekran:
 
 ```text
 Përshëndetje!

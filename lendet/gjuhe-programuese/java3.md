@@ -586,6 +586,10 @@ $$
 S=\sum_{i=0}^{n}{(2i+3)}
 $$
 
+--
+
+![](/lendet/gjuhe-programuese/java3/sum.png) <!-- .element: class="stretch" style="border:none" -->
+
 ---
 
 ## Detyra shtesë
@@ -621,6 +625,8 @@ int main() {
 ---
 
 **Detyrë:** Të lexohet një numër i plotë, dhe pastaj të shfaqet në formë decimale, heksadecimale, dhe oktale.
+
+--
 
 ```cpp
 #include <iostream>

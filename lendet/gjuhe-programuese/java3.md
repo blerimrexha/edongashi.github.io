@@ -367,90 +367,6 @@ int main() {
 
 ---
 
-**Operatori ternar (`?`)**
-
-Shpesh kemi rastin me dy degëzime si në vijim:
-
-```cpp
-if (kushti) {
-  y = shprehja1;
-} else {
-  y = shprehja2;
-}
-```
-
-Këtë mund ta thjeshtojmë në:
-
-```cpp
-y = kushti ? shprehja1 : shprehja2;
-```
-
----
-
-Urdhëri:
-
-```cpp
-y = kushti ? shprehja1 : shprehja2
-```
-
-interpretohet kështu:
-
-$$
-y = \begin{cases}
-shprehja1 & \text{nëse}\; \textit{kushti} \\
-shprehja2 & \text{nëse jo}
-\end{cases}
-$$
-
----
-
-Nga definicioni i vlerës absolute:
-
-$$
-|x| = \begin{cases}
-x & \text{kur}\; x \geq 0 \\
--x & \text{kur}\; x < 0
-\end{cases}
-$$
-
-Në kod shkruhet kështu:
-
-```cpp
-vlera_absolute = (x >= 0 ? x : -x);
-```
-
----
-
-**`(a > b ? a : b)`** është shprehje.
-
-Pse?
-
----
-
-**`(a ? b : c)`** është **shprehje** e cila mund të përdoret kudo që kemi **RValue**.
-
-Jep vlerën ose **`b`** ose **`c`**, varësisht a vlen kushti **`a`**.
-
-```cpp
-cout << (piket >= 50 ? "Keni kaluar" : "Nuk keni kaluar");
-
-vlera_absolute = (x >= 0 ? x : -x);
-```
-
----
-
-**Shembull:** Gjetja e vlerës maksimale.
-
-```cpp
-int a, b, max;
-cin >> a;
-cin >> b;
-max = a > b ? a : b;
-cout << "Maksimumi është: " << max;
-```
-
----
-
 Kushtëzimi me shumë degë:
 
 ```cpp
@@ -596,34 +512,6 @@ $$
 
 ---
 
-**Detyrë:** Të lexohen dy numra nga tastiera. Të shfaqet numri më i madh nga këta dy.
-
-**Bonus:** Të gjendet maksimumi i 3 numrave.
-
---
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-  int a, b;
-
-  cout << "Jepni numrin e pare: ";
-  cin  >> a;
-  cout << "Jepni numrin e dyte: ";
-  cin  >> b;
-
-  cout << "Maksimumi eshte: "
-       << (a > b ? a : b)
-       << endl;
-
-  return 0;
-}
-```
-
----
-
 **Detyrë:** Të lexohet një numër i plotë, dhe pastaj të shfaqet në formë decimale, heksadecimale, dhe oktale.
 
 --
@@ -662,7 +550,7 @@ int main() {
   char karakteri;
 
   cout << "Shtypni nje karakter: ";
-  karakteri = cin.get();
+  cin  >> karakteri;
 
   if (karakteri >= 'A' && karakteri <= 'Z') {
     cout << "Karakteri eshte shkronje e madhe." << endl;
@@ -671,37 +559,6 @@ int main() {
   } else {
     cout << "Karakteri eshte dicka tjeter." << endl;
   }
-
-  return 0;
-}
-```
-
----
-
-**Detyrë:** Të lexohet një numër i plotë nga tastiera, dhe të tregohet nëse ai numër është çift apo tek.
-
-```text
-Shtypni numrin: 7
-Keni shtypur numer tek.
-```
-
-**Bonus:** Të lexohen 5 numra të plotë dhe të gjendet shuma e numrave tek dhe çift.
-
---
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-  int numri;
-
-  cout << "Shtypni numrin: ";
-  cin  >> numri;
-
-  cout << "Keni shtypur numer "
-       << (numri % 2 == 0 ? "cift" : "tek")
-       << "." << endl;
 
   return 0;
 }

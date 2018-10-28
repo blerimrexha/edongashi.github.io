@@ -66,7 +66,7 @@ Përshëndetje!
 Po mësojmë gjuhën programuese "C++".
 ```
 
-Ndihmesë: karakteri `ë` shkruhet `\x89`
+**Ndihmesë:** karakteri `ë` shkruhet `\x89`
 
 ```cpp
 "\x89"
@@ -259,7 +259,7 @@ Programi "rezervon" hapësirë për ta ruajtur këtë të dhënë.
 
 ---
 
-**Shembull**
+**Shembull:**
 
 **`nr_studenteve`** është numër i plotë (**`int`**), dhe paraqet numrin e studentëve prezent në sallë.
 

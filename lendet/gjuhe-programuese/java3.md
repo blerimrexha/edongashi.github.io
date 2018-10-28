@@ -588,7 +588,7 @@ $$
 
 --
 
-![](/lendet/gjuhe-programuese/java3/sum.png) <!-- .element: style="border:none;max-height:640px;" -->
+![](/lendet/gjuhe-programuese/java3/sum.png) <!-- .element: style="border:none;max-height:540px;" -->
 
 ---
 

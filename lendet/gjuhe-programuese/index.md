@@ -17,6 +17,7 @@ noslides: true
 1. [Java 1 - Hyrje në C++](/lendet/gjuhe-programuese/java1)
 2. [Java 2 - Tipet dhe variablat](/lendet/gjuhe-programuese/java2)
 2. [Java 3 - Formatimi, kushtëzimet, bllok diagramet](/lendet/gjuhe-programuese/java3)
+2. [Java 4 - Shprehjet e kushtëzuara, switch, goto](/lendet/gjuhe-programuese/java4)
 
 ---
 

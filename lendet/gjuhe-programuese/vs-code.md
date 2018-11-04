@@ -158,7 +158,7 @@ Nëse keni arritur në këtë hap është mirë të restartohet PC ose së paku 
 
 **Shkruarja e programeve në VS Code**
 
-1. Krijojme fajllin burimor, i cili duhet të mbarojë me praprashtesën `.cpp`.
+1. Krijojmë fajllin burimor, i cili duhet të mbarojë me prapashtesën `.cpp`.
 2. E klikojmë fajllin dhe na hapet editori.
 3. Te editori shkruajmë kodin dhe shtypim `File > Save` ose `Ctrl+S` për ta ruajtur.
 4. Klikojmë ikonën për startimin e programit.

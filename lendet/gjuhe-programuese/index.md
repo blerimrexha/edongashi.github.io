@@ -21,6 +21,12 @@ noslides: true
 
 ---
 
+## Artikuj
+
+- [C++ përmes VS Code](/lendet/gjuhe-programuese/vs-code)
+
+---
+
 ## Orari i ushtrimeve
 
 Grupi|Dita|Ora|Salla

@@ -26,3 +26,4 @@ Mbrojtja e fazës 1 të projektit do të bëhet të mëkurën, 14/11/2018. Orari
 
 - [Shablloni FIEK Feasibility Study](/lendet/inxhinieri-softuerike/materiale/FIEK_Feasibility_Study.doc)
 - [Shembull - POS Feasibility Study](/lendet/inxhinieri-softuerike/materiale/POS_Feasibility_Study.doc)
+

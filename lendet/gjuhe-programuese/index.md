@@ -18,6 +18,7 @@ noslides: true
 2. [Java 2 - Tipet dhe variablat](/lendet/gjuhe-programuese/java2)
 2. [Java 3 - Formatimi, kushtëzimet, bllok diagramet](/lendet/gjuhe-programuese/java3)
 2. [Java 4 - Shprehjet e kushtëzuara, switch, goto](/lendet/gjuhe-programuese/java4)
+2. [Java 5 - Unazat](/lendet/gjuhe-programuese/java5)
 
 ---
 

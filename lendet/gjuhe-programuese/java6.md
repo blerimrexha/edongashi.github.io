@@ -44,11 +44,11 @@ int notat[4] = { 9, 10, 8, 7 };
 Leximi nga vargu:
 
 ```cpp
-int notat[4] = { 6, 10, 7, 8 };
-int nota1 = notat[0]; // 6
+int notat[4] = { 9, 10, 8, 7 };
+int nota1 = notat[0]; // 9
 int nota2 = notat[1]; // 10
-int nota3 = notat[2]; // 7
-int nota4 = notat[3]; // 8
+int nota3 = notat[2]; // 8
+int nota4 = notat[3]; // 7
 ```
 
 ![](/lendet/gjuhe-programuese/java6/notat.png) <!-- .element: style="max-height:400px;border:none;" -->
@@ -59,10 +59,10 @@ Shkruarja në varg:
 
 ```cpp
 int notat[4];
-notat[0] = 6;  // nota 1
+notat[0] = 9;  // nota 1
 notat[1] = 10; // nota 2
-notat[2] = 7;  // nota 3
-notat[3] = 8;  // nota 4
+notat[2] = 8;  // nota 3
+notat[3] = 7;  // nota 4
 ```
 
 ---

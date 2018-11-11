@@ -37,7 +37,7 @@ Vargu është seri e vlerave të ndonjë tipi.
 int notat[4] = { 9, 10, 8, 7 };
 ```
 
-`notat` është varg i gjatësisë $4$ dhe është inicializuar me vlerat $\left\{ 9, 10, 8, 7 \right\}$
+`notat` është varg i gjatësisë $4$ dhe është inicializuar me vlerat $ \{ 9, 10, 8, 7 \} $
 
 ---
 

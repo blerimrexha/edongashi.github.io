@@ -37,7 +37,7 @@ Vargu është seri e vlerave të ndonjë tipi.
 int notat[4] = { 9, 10, 8, 7 };
 ```
 
-`notat` është varg i gjatësisë $4$ dhe është inicializuar me vlerat $[9, 10, 8, 7]$
+`notat` është varg i gjatësisë $4$ dhe është inicializuar me vlerat $\lbrace 9, 10, 8, 7 \rbrace$
 
 ---
 
@@ -84,7 +84,7 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
-Unaza merr vlerat $i = 0 \dots n-1$
+Unaza merr vlerat $i = \lbrace 0 \dots n-1 \rbrace$
 
 ---
 
@@ -97,7 +97,7 @@ Unaza merr vlerat $i = 0 \dots n-1$
 
 ---
 
-**Detyrë:** Të inicializohet vargu $[7,2,5,6,1,10,3]$
+**Detyrë:** Të inicializohet vargu $\lbrace 7,2,5,6,1,10,3 \rbrace$
 
 1. Të shfaqen të gjithë elementet e këtij vargu.
 2. Të gjendet shuma e elementeve të vargut.
@@ -116,7 +116,7 @@ Unaza merr vlerat $i = 0 \dots n-1$
 
 ---
 
-**Detyrë:** Të krijohet vargu $[2.5,1.7,3.2,7.5,11.3]$.
+**Detyrë:** Të krijohet vargu $\lbrace 2.5,1.7,3.2,7.5,11.3 \rbrace$.
 
 1. Të llogaritet mesatarja e vargut.
 2. Të kopjohet vargu në një varg tjetër.

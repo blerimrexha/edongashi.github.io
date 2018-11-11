@@ -177,7 +177,7 @@ Brenda unazës kemi dy urdhëra të cilat mund të kontrollojnë rrjedhën e ekz
 Shumë shpesh unaza ka këtë formë:
 
 ```cpp
-int i = 0; /* Inicializimi */
+int i = 1; /* Inicializimi */
 while (i < x) /* Kushti */ {
   blloku; /* Blloku */
 
@@ -199,7 +199,7 @@ for (inicializimi; kushti; avansimi) {
 
 ```cpp
 int S = 0;
-int i = 0; // a
+int i = 1; // a
 while (i <= n) { // b
   S += i; 
   i++; // c
@@ -209,7 +209,7 @@ while (i <= n) { // b
 ```cpp
 int S = 0;
 //   <---a--->  <--b--> <-c->
-for (int i = 0; i <= n; i++) {
+for (int i = 1; i <= n; i++) {
   S += i;
 }
 ```
@@ -346,7 +346,7 @@ Gjerësia maksimale e figurës të lexohet nga tastiera.
 
 ---
 
-**Detyrë:** Të shfaqen 100 numrat e parë të serisë Fibonacci.
+**Detyrë:** Të shfaqen 20 numrat e parë të serisë Fibonacci.
 
 $$
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...

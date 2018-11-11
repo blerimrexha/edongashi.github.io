@@ -179,6 +179,21 @@ int A[3][4] = {
 
 ---
 
+Leximi dhe shkrimi i anëtarëve:
+
+```cpp
+int A[3][4] = {
+  { 2,  4,  7,  1 },
+  { 5, -1,  3,  5 },
+  { 3,  2,  1, 14 }
+};
+
+int vlera = A[1,3]; // vlera = 5
+A[2,0] = 13;
+```
+
+---
+
 **Detyrë:** Të inicializohet matrica
 
 $$

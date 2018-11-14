@@ -23,6 +23,13 @@ int main()
 }
 ```
 
+--
+
+```text
+s=0, t=0, g=7
+
+```
+
 ---
 
 **Detyrë:** Çka do të shtypet kur ekzekutohet ky kod?
@@ -47,6 +54,13 @@ int main()
        << "\n";
   return 0;
 }
+```
+
+--
+
+```text
+
+Rezultati g=    5
 ```
 
 ---
@@ -267,6 +281,44 @@ Blloku është i garantuar të ekzekutohet së paku një herë.
 
 ![](/lendet/gjuhe-programuese/java5/detyra1.png) <!-- .element: style="max-height:480px;border:none;" -->
 
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a, b, c;
+  cout << "a=";
+  cin >> a;
+  cout << "b=";
+  cin >> b;
+  cout << "c=";
+  cin >> c;
+  int s = 0;
+  int i = a;
+  do {
+    s = s + i;
+    i = i + c;
+    cout << "i=" << i
+         << ", s=" << s
+         << endl;
+  } while (i <= b);
+  return 0;
+}
+```
+
+--
+
+Dalja për $a=1,\; b=10,\; c=3$:
+
+```text
+i=4, s=1
+i=7, s=5
+i=10, s=12
+i=13, s=22
+```
+
 ---
 
 <!-- .slide: style="font-size:0.7em" -->
@@ -290,6 +342,50 @@ int main()
       continue;
     else
       c = c - i;
+  cout << "c=";
+  cout.width(5);
+  cout.fill('x');
+  cout << c << endl;
+  return 0;
+}
+```
+
+--
+
+1) Rezultati në ekran.
+
+```text
+c=xx-24
+
+```
+
+--
+
+2) Kushti do të testohet 6 herë.
+
+--
+
+3) Me unazën `while`:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int a = 2, b = 12;
+  double c = 0;
+  int i = a;
+  while (i <= b) {
+    if (i % 3 == 0) {
+      i = i + 2;
+      continue;
+    } else {
+      c = c - i;
+      i = i + 2;
+    }
+  }
+
   cout << "c=";
   cout.width(5);
   cout.fill('x');
@@ -326,6 +422,31 @@ $$
 S = \sum_{\begin{array}{c}i=1\\i=\textit{tek},\;i\neq 5\end{array}}^{n}{(2i^2+5)}
 $$
 
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n;
+  cout << "n=";
+  cin >> n;
+
+  int S = 0;
+  for (int i = 1; i <= n; i++) {
+    if (i % 2 == 0 || i == 5) {
+      continue;
+    }
+
+    S += 2 * i * i + 5;
+  }
+
+  cout << "S=" << S << endl;
+  return 0;
+}
+```
+
 ---
 
 **Detyrë:** Të shfaqet kjo figurë përmes unazave:
@@ -344,13 +465,67 @@ $$
 
 Gjerësia maksimale e figurës të lexohet nga tastiera.
 
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n;
+  cout << "n=";
+  cin >> n;
+
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= i; j++) {
+      cout << "*";
+    }
+
+    cout << endl;
+  }
+
+  for (int i = n - 1; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+      cout << "*";
+    }
+
+    cout << endl;
+  }
+
+  return 0;
+}
+```
+
 ---
 
 **Detyrë:** Të shfaqen 20 numrat e parë të serisë Fibonacci.
 
 $$
-0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+1, 1, 2, 3, 5, 8, 13, 21, 34, ...
 $$
+
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a = 0;
+  int b = 1;
+  cout << a << endl
+       << b << endl;
+
+  for (int i = 0; i < 18; i++) {
+    int c = a + b;
+    a = b;
+    b = c;
+    cout << c << endl;
+  }
+
+  return 0;
+}
+```
 
 ---
 
@@ -362,9 +537,71 @@ $$
 
 $m,\;n,\;x$ janë hyrje nga tastiera.
 
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int m, n, x, y;
+  cout << "m=";
+  cin >> m;
+  cout << "n=";
+  cin >> n;
+  cout << "x=";
+  cin >> x;
+
+  int P = 1;
+  int S = 0;
+
+  for (int k = 2; k <= n; k += 2) {
+    P *= k + x;
+  }
+
+  for (int i = 1; i <= m + n; i += 2) {
+    S += 2 * i + n;
+  }
+
+  y = 5 * x - 2 * P + 3 * S;
+  cout << "y=" << y << endl;
+
+  return 0;
+}
+```
+
 ---
 
 **Detyrë:** Të lexohet një numër i plotë nga tastiera. Të tregohet nëse ky numër është numër i thjeshtë.
+
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n;
+  cout << "n=";
+  cin >> n;
+
+  bool nr_thjeshte = true;
+  for (int i = 2; i < n; i++) {
+    if (n % i == 0) {
+      nr_thjeshte = false;
+      break;
+    }
+  }
+
+  if (nr_thjeshte) {
+    cout << "n eshte numer i thjeshte" << endl;
+  } else {
+    cout << "n nuk eshte numer i thjeshte" << endl;
+  }
+
+  return 0;
+}
+```
 
 ---
 
@@ -373,6 +610,35 @@ $m,\;n,\;x$ janë hyrje nga tastiera.
 1. Të lexohen vazhdimisht numra nga tastiera.
 2. Programi ndalon kur japim numër negativ.
 3. Pas ndalimit të shfaqet shuma e numrave çift dhe shuma e numrave tek të lexuar.
+
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int shuma_cift = 0;
+  int shuma_tek = 0;
+  while (true) {
+    int n;
+    cin >> n;
+    if (n < 0) {
+      break;
+    }
+
+    if (n % 2 == 0) {
+      shuma_cift += n;
+    } else {
+      shuma_tek += n;
+    }
+  }
+
+  cout << "Shuma e nr cift: " << shuma_cift << endl
+       << "Shuma e nr tek: " << shuma_tek << endl;
+  return 0;
+}
+```
 
 ---
 
@@ -394,4 +660,38 @@ $m,\;n,\;x$ janë hyrje nga tastiera.
 ...
 srand(time(0));
 int nr_sekret = rand() % 100 + 1;
+```
+
+--
+
+```cpp
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+using namespace std;
+
+int main() {
+  srand(time(0));
+  int nr_sekret = rand() % 100 + 1;
+
+  int provat = 0;
+  while (true)  { 
+    provat++;
+
+    int n;
+    cout << "Jepni n: ";
+    cin >> n;
+    if (n == nr_sekret) {
+      break;
+    } else if (n > nr_sekret) {
+      cout << "Me i vogel" << endl;
+    } else {
+      cout << "Me i madh" << endl;
+    }
+  }
+
+  cout << "E qelluat numrin me "
+       << provat << " prova." << endl;
+  return 0;
+}
 ```

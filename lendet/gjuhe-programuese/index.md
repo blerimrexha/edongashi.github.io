@@ -8,7 +8,7 @@ noslides: true
 
 ## Njoftime
 
-**23/10/2018:** Sllajdet dhe zgjidhjet e detyrave janë bashkuar në një dokument të vetëm. Zgjidhjen e detyrës e gjeni poshtë përshkrimit të saj.
+Ushtrime plotësuese dhe konsultime rreth lëndës do të mbahen të premten 16/11/2018 nga ora 10:00 deri 12:00 në sallen 615.
 
 ---
 
@@ -19,6 +19,8 @@ noslides: true
 2. [Java 3 - Formatimi, kushtëzimet, bllok diagramet](/lendet/gjuhe-programuese/java3)
 2. [Java 4 - Shprehjet e kushtëzuara, switch, goto](/lendet/gjuhe-programuese/java4)
 2. [Java 5 - Unazat](/lendet/gjuhe-programuese/java5)
+2. [Java 6 - Vargjet](/lendet/gjuhe-programuese/java6)
+
 
 ---
 

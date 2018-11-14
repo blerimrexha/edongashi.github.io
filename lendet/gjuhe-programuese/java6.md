@@ -116,7 +116,7 @@ Unaza merr vlerat $i = \lbrace 0 \dots n-1 \rbrace$
 
 --
 
-1. Të shfaqen të gjithë elementet e këtij vargu.
+Të shfaqen të gjithë elementet e këtij vargu.
 
 ```cpp
 #include <iostream>
@@ -136,7 +136,7 @@ int main() {
 
 --
 
-2. Të gjendet shuma e elementeve të vargut.
+Të gjendet shuma e elementeve të vargut.
 
 ```cpp
 #include <iostream>
@@ -159,7 +159,7 @@ int main() {
 
 --
 
-3. Të tregohet sa elemente janë $\geq 5$.
+Të tregohet sa elemente janë $\geq 5$.
 
 ```cpp
 #include <iostream>
@@ -184,7 +184,7 @@ int main() {
 
 --
 
-4. Të gjendet shuma e numrave tek dhe çift.
+Të gjendet shuma e numrave tek dhe çift.
 
 ```cpp
 #include <iostream>
@@ -212,7 +212,7 @@ int main() {
 
 --
 
-5. Të gjendet shuma e elementit të parë dhe të fundit.
+Të gjendet shuma e elementit të parë dhe të fundit.
 
 ```cpp
 #include <iostream>
@@ -239,7 +239,7 @@ int main() {
 
 --
 
-1. Të gjendet elementi më i madh në këtë varg.
+Të gjendet elementi më i madh në këtë varg.
 
 ```cpp
 #include <iostream>
@@ -267,7 +267,7 @@ int main() {
 
 --
 
-2. Të gjendet elementi më i vogël në këtë varg.
+Të gjendet elementi më i vogël në këtë varg.
 
 ```cpp
 #include <iostream>
@@ -295,7 +295,7 @@ int main() {
 
 --
 
-3. Të shfaqen elementet në indeksa tek.
+Të shfaqen elementet në indeksa tek.
 
 ```cpp
 #include <iostream>
@@ -319,7 +319,7 @@ int main() {
 
 --
 
-4. Të kthehet vargu mbrapsht dhe të shfaqen vlerat.
+Të kthehet vargu mbrapsht dhe të shfaqen vlerat.
 
 ```cpp
 #include <iostream>
@@ -358,7 +358,7 @@ int main() {
 
 --
 
-1. Të llogaritet mesatarja e vargut.
+Të llogaritet mesatarja e vargut.
 
 ```cpp
 #include <iostream>
@@ -380,7 +380,7 @@ int main() {
 
 --
 
-2. Të kopjohet vargu në një varg tjetër.
+Të kopjohet vargu në një varg tjetër.
 
 ```cpp
 #include <iostream>
@@ -401,7 +401,7 @@ int main() {
 
 --
 
-3. Në vargun e ri elementet ta kenë shenjën e kundërt.
+Në vargun e ri elementet ta kenë shenjën e kundërt.
 
 ```cpp
 #include <iostream>
@@ -508,7 +508,7 @@ $$
 
 --
 
-1. Të shfaqen të gjithë anëtarët e matricës.
+Të shfaqen të gjithë anëtarët e matricës.
 
 ```cpp
 #include <iostream>
@@ -536,7 +536,7 @@ int main() {
 
 --
 
-2. Të llogaritet shuma e anëtarëve.
+Të llogaritet shuma e anëtarëve.
 
 ```cpp
 #include <iostream>
@@ -565,7 +565,7 @@ int main() {
 
 --
 
-3. Të gjendet anëtari më i madh dhe më i vogël.
+Të gjendet anëtari më i madh dhe më i vogël.
 
 ```cpp
 #include <iostream>

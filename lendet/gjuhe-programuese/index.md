@@ -21,7 +21,6 @@ Ushtrime plotësuese dhe konsultime rreth lëndës do të mbahen të premten 16/
 2. [Java 5 - Unazat](/lendet/gjuhe-programuese/java5)
 2. [Java 6 - Vargjet](/lendet/gjuhe-programuese/java6)
 
-
 ---
 
 ## Artikuj

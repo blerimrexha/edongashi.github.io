@@ -8,7 +8,7 @@ noslides: true
 
 ## Njoftime
 
-Ushtrime plotësuese dhe konsultime rreth lëndës do të mbahen të premten 16/11/2018 nga ora 10:00 deri 12:00 në sallen 615. Të gjithë të interesuarit mund të paraqiten në këtë orar, pavarësisht grupit.
+**Njoftim:** Për shkak të kërkesës së studentëve këto ushtrime shtyhen për javën tjetër. Dita e saktë do të shpallet në këtë faqe. ~~Ushtrime plotësuese dhe konsultime rreth lëndës do të mbahen të premten 16/11/2018 nga ora 10:00 deri 12:00 në sallen 615. Të gjithë të interesuarit mund të paraqiten në këtë orar, pavarësisht grupit.~~
 
 ---
 

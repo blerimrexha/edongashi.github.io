@@ -6,6 +6,15 @@ noslides: true
 
 # Gjuhë Programuese
 
+
+## Detyra e parë vlerësusese
+
+Detyra e parë vlerësuese do të mbahet javën vijuese (19-23 nentor) gjatë orarit të ushtrimeve. Detyra do të përfshijë materialin e 6 javëve të para (përfshirë vargjet, por jo matricat).
+
+Studentët nga grupi i të hënës (1A") mund ta zhvendosin mbrojtjen e detyrës për të enjten (22/11/2018) nga ora 13:00. Studentët të cilët kanë Shkathtësi Komunikuese mund të vijnë nga ora 11:30.
+
+Salla 615 është në dispozicion të martën nga ora 13:30-17:00. Luten studentët të propozojnë një orar për mbajtjen e ushtrimeve shtesë në këtë interval. Propozimin dhe ardhjen e konfirmoni në e-mail adresen edon.gashi@uni-pr.edu.
+
 ## Njoftime
 
 **Njoftim:** Për shkak të kërkesës së studentëve këto ushtrime shtyhen për javën tjetër. Dita e saktë do të shpallet në këtë faqe. ~~Ushtrime plotësuese dhe konsultime rreth lëndës do të mbahen të premten 16/11/2018 nga ora 10:00 deri 12:00 në sallen 615. Të gjithë të interesuarit mund të paraqiten në këtë orar, pavarësisht grupit.~~
@@ -16,10 +25,10 @@ noslides: true
 
 1. [Java 1 - Hyrje në C++](/lendet/gjuhe-programuese/java1)
 2. [Java 2 - Tipet dhe variablat](/lendet/gjuhe-programuese/java2)
-2. [Java 3 - Formatimi, kushtëzimet, bllok diagramet](/lendet/gjuhe-programuese/java3)
-2. [Java 4 - Shprehjet e kushtëzuara, switch, goto](/lendet/gjuhe-programuese/java4)
-2. [Java 5 - Unazat](/lendet/gjuhe-programuese/java5)
-2. [Java 6 - Vargjet](/lendet/gjuhe-programuese/java6)
+3. [Java 3 - Formatimi, kushtëzimet, bllok diagramet](/lendet/gjuhe-programuese/java3)
+4. [Java 4 - Shprehjet e kushtëzuara, switch, goto](/lendet/gjuhe-programuese/java4)
+5. [Java 5 - Unazat](/lendet/gjuhe-programuese/java5)
+6. [Java 6 - Vargjet](/lendet/gjuhe-programuese/java6)
 
 ---
 

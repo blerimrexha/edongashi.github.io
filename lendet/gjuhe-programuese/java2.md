@@ -462,6 +462,7 @@ int main() {
   c = a + b;
 
   cout << "Vlera e a+b eshte: " << c << endl;
+  return 0;
 }
 ```
 

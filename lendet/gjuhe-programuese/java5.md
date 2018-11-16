@@ -156,7 +156,7 @@ $$
 
 ```cpp
 #include <iostream>
-using namepsacet std;
+using namespace std;
 
 int main() {
   int i, n, S, P, z;

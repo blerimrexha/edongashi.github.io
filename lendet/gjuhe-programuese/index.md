@@ -14,6 +14,8 @@ Studentët nga grupi i të hënës (1A") mund ta zhvendosin mbrojtjen e detyrës
 
 **Rreth ushtrimeve shtesë (jo-obligative):** Salla 615 është në dispozicion të martën nga ora 13:30-17:00. Luten studentët të propozojnë një orar për mbajtjen e ushtrimeve shtesë në këtë interval. Propozimin dhe ardhjen e konfirmoni në e-mail adresën edon.gashi@uni-pr.edu. Këto ushtrime nuk janë obligative dhe kanë për qëllim përsëritjen e materialit dhe përgatitjen e studentëve për detyrë/kolokvium.
 
+---
+
 ## Njoftime
 
 **Njoftim:** Për shkak të kërkesës së studentëve këto ushtrime shtyhen për javën tjetër. Dita e saktë do të shpallet në këtë faqe. ~~Ushtrime plotësuese dhe konsultime rreth lëndës do të mbahen të premten 16/11/2018 nga ora 10:00 deri 12:00 në sallen 615. Të gjithë të interesuarit mund të paraqiten në këtë orar, pavarësisht grupit.~~

@@ -6,14 +6,13 @@ noslides: true
 
 # Gjuhë Programuese
 
-
 ## Detyra e parë vlerësusese
 
-Detyra e parë vlerësuese do të mbahet javën vijuese (19-23 nentor) gjatë orarit të ushtrimeve. Detyra do të përfshijë materialin e 6 javëve të para (përfshirë vargjet, por jo matricat).
+Detyra e parë vlerësuese do të mbahet javën vijuese (19-23 nëntor) gjatë orarit të rregullt të ushtrimeve. Detyra do të përfshijë materialin e 6 javëve të para (përfshirë vargjet, por jo matricat).
 
 Studentët nga grupi i të hënës (1A") mund ta zhvendosin mbrojtjen e detyrës për të enjten (22/11/2018) nga ora 13:00. Studentët të cilët kanë Shkathtësi Komunikuese mund të vijnë nga ora 11:30.
 
-Salla 615 është në dispozicion të martën nga ora 13:30-17:00. Luten studentët të propozojnë një orar për mbajtjen e ushtrimeve shtesë në këtë interval. Propozimin dhe ardhjen e konfirmoni në e-mail adresen edon.gashi@uni-pr.edu.
+**Rreth ushtrimeve shtesë (jo-obligative):** Salla 615 është në dispozicion të martën nga ora 13:30-17:00. Luten studentët të propozojnë një orar për mbajtjen e ushtrimeve shtesë në këtë interval. Propozimin dhe ardhjen e konfirmoni në e-mail adresën edon.gashi@uni-pr.edu. Këto ushtrime nuk janë obligative dhe kanë për qëllim përsëritjen e materialit dhe përgatitjen e studentëve për detyrë/kolokvium.
 
 ## Njoftime
 

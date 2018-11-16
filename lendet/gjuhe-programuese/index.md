@@ -6,7 +6,7 @@ noslides: true
 
 # Gjuhë Programuese
 
-## Detyra e parë vlerësusese
+## Detyra e parë vlerësuese
 
 Detyra e parë vlerësuese do të mbahet javën vijuese (19-23 nëntor) gjatë orarit të rregullt të ushtrimeve. Detyra do të përfshijë materialin e 6 javëve të para (përfshirë vargjet, por jo matricat).
 
